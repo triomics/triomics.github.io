@@ -1,0 +1,15 @@
+.header-info {
+	& .accent-redirect {
+		color: #ffb621;
+		font-weight: $font-b;
+
+		&:hover {
+			color: #252640;
+		}
+	}
+
+	& h1 {
+		letter-spacing: 1px;
+		font-weight: $font-n;
+	}
+}
