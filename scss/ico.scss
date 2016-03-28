@@ -1,0 +1,60 @@
+$icomoon-font-path: "../fonts/trio" !default;
+
+$trio-code: "\e900";
+$trio-design-1: "\e901";
+$trio-design-2: "\e902";
+$trio-marketing: "\e903";
+$trio-seo: "\e904";
+
+@font-face {
+    font-family: 'triomics-ico';
+    src:    url('#{$icomoon-font-path}/triomics-ico.eot?6t5rf5');
+    src:    url('#{$icomoon-font-path}/triomics-ico.eot?6t5rf5#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/triomics-ico.ttf?6t5rf5') format('truetype'),
+        url('#{$icomoon-font-path}/triomics-ico.woff?6t5rf5') format('woff'),
+        url('#{$icomoon-font-path}/triomics-ico.svg?6t5rf5#triomics-ico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="trio-"], [class*=" trio-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'triomics-ico' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.trio-code {
+    &:before {
+        content: $trio-code;
+    }
+}
+.trio-design-1 {
+    &:before {
+        content: $trio-design-1;
+    }
+}
+.trio-design-2 {
+    &:before {
+        content: $trio-design-2;
+    }
+}
+.trio-marketing {
+    &:before {
+        content: $trio-marketing;
+    }
+}
+.trio-seo {
+    &:before {
+        content: $trio-seo;
+    }
+}
+
