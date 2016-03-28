@@ -141,13 +141,14 @@ a:hover, a:focus {
 }
 
 .btn-secondary {
-  background-color: #ffffff;
-  color: #231f20;
+  background-color: #252640;
+  color: #fff;
+  padding: 22px 60px;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
-  background-color: #e6e5e5;
-  color: #231f20;
+  background-color: #252640;
+  color: #ffb621;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -234,7 +235,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: rgba(230,229,229,.5);
+    background: rgba(0, 0, 0, .3);
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -251,11 +252,38 @@ a:hover, a:focus {
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 1px;
+    position: relative;
+}
+
+.navbar-nav a:before,
+.navbar-nav a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffb621;
+  transition: width .35s;
+}
+
+.navbar-nav a:before {
+ top: -5px;
+ left: 0;
+}
+
+.navbar-nav a:after {
+ bottom: -5px;
+ right: 0;
+}
+
+.navbar-nav a:hover:before,
+.navbar-nav a:hover:after {
+  width: 100%;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-nav a:hover{
-    color: #252640;
+    color: #ffb621;
     opacity: 1;
 }
 
@@ -275,7 +303,7 @@ a:hover, a:focus {
 
 .logo img {
 	margin-top: -6px;
-  width: 50px;
+  width: 100px;
   height: 50px;
 }
 
@@ -285,11 +313,17 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/sample4.jpg) no-repeat center center;
+  // background: url(../img/sample4.jpg) no-repeat center center;
   width: 100%;
+
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
   padding: 20px 10px 60px 10px;
   height: 100vh;
   overflow: hidden;
+  position: relative;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -307,7 +341,7 @@ header {
 }
 
 .signin {
-  padding-top: 9px;
+  padding-top: 35px;
 }
 
 
@@ -373,12 +407,27 @@ header {
 
 
 #be-the-first {
-  background: url(../img/sample6.jpg) #231f20 no-repeat center center fixed;
+  background: url(../img/sample.jpg) #231f20 no-repeat center center fixed;
+  position: relative;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#be-the-first:before {
+  content:'';
+  display: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .8;
 }
 
 hr.line {
@@ -399,20 +448,6 @@ hr.line {
 .yellow {
 	border-color: #fdc05d;
 	color: #fdc05d;
-}
-
-.iphone {
-    position: relative;
-    height: 200px;
-}
-
-.iphone img {
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 440px;
 }
 
 
