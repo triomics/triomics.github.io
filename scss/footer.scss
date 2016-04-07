@@ -1,0 +1,16 @@
+footer {
+	background: #252640;
+	padding: 25px 0;
+
+	& .copyrights {
+		text-align: center;
+		font-family: $open-sans;
+		letter-spacing: 1px;
+		vertical-align: middle;
+
+		& .copyright-text {
+			margin: 0;
+			font-size: 14px;
+		}
+	}
+}
