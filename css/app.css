@@ -11836,6 +11836,16 @@ footer {
   .btn-secondary {
     padding: 22px 40px !important;
   }
+  .header-info h1 {
+    font-size: 32px;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  .col-xs-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -12022,6 +12032,12 @@ header .social-container {
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
+  }
+}
+
+@media (max-width: 340px) {
+  header .social-container {
+    bottom: 20px;
   }
 }
 

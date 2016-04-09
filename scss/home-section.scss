@@ -38,6 +38,10 @@ header {
 			transform: translateX(50%);
 		}
 
+		@media (max-width: 340px) { 
+			bottom: 20px;
+		}
+
 		& .soc-item {
 		 display: inline-block;
 		 margin-right: 15px;
