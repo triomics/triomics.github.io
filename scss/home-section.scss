@@ -24,9 +24,19 @@ header {
 		bottom: 50px;
 		right: 70px;
 
+		@media screen and (max-width: 767px) {
+			right: 50%;
+			-webkit-transform: translateX(50%);
+			-ms-transform: translateX(50%);
+			transform: translateX(50%);
+		}
+
 		& .soc-item {
 		 display: inline-block;
 		 margin-right: 15px;
+		 @media screen and (max-width: 767px) {
+		 	margin: 0 15px;
+		 }
 
 			& a {
 				font-size: 20px;
@@ -47,4 +57,21 @@ header {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+
+	@media screen and (max-width: 767px) {
+		position: initial;
+		top: 0;
+		right: 0;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		margin: 30px 0;
+	}
+
+	& li a {
+		@media screen and (max-width: 767px) {
+			padding: 10px 0;
+			text-align: center;
+		}
+	}
 }
