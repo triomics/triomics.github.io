@@ -36,13 +36,13 @@
 	    </div>
 	    <div class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#pricing" class="scroll">Home</a></li>
-	        <li><a href="#">Services</a></li>
-	        <li><a href="#">Why us?</a></li>
+	        <li><a href="#homepage" class="scroll">Home</a></li>
+	        <li><a href="#be-the-first">Services</a></li>
+	        <li><a href="#benefits">Why us?</a></li>
 	        <li><a href="#">Portfolio</a></li>
 	        <li><a href="#">Blog</a></li>
-	        <li><a href="#">Free analysis</a></li>
-	        <li><a href="#">Contacts</a></li>
+	        <li><a href="#contacts">Free analysis</a></li>
+	        <li><a href="#contacts">Contacts</a></li>
 	      </ul>
 	    </div><!--/.navbar-collapse -->
 	  </div>
@@ -57,11 +57,11 @@
           <a href="index.html"><img src="img/logo.svg"  width="100" height="100" alt="Logo"></a>
         </div>
         <div class="col-xs-6 signin text-right navbar-nav">
-          <a href="#pricing" class="scroll">Home</a>&nbsp; &nbsp; &nbsp;<a href="#">Services</a>&nbsp; &nbsp; &nbsp;<a href="#">Why us?</a>&nbsp; &nbsp; &nbsp;<a href="#">Portfolio</a>&nbsp; &nbsp; &nbsp;<a href="#">Blog</a>&nbsp; &nbsp; &nbsp;<a href="#">Free analysis</a>&nbsp; &nbsp; &nbsp;<a href="#">Contacts</a>
+          <a href="#homepage" class="scroll">Home</a>&nbsp; &nbsp; &nbsp;<a href="#be-the-first">Services</a>&nbsp; &nbsp; &nbsp;<a href="#benefits">Why us?</a>&nbsp; &nbsp; &nbsp;<a href="#">Portfolio</a>&nbsp; &nbsp; &nbsp;<a href="#">Blog</a>&nbsp; &nbsp; &nbsp;<a href="#contacts">Free analysis</a>&nbsp; &nbsp; &nbsp;<a href="#contacts">Contacts</a>
         </div>
       </div>
       
-      <div class="row header-info">
+      <div class="row header-info" id="homepage">
         <div class="col-sm-10 col-sm-offset-1 text-center">
           <h1 class="wow fadeIn">We are <a href="#" class="accent-redirect">triomics</a></h1>
           <br />
@@ -73,7 +73,7 @@
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
               <div class="row">
                 <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                  <a href="#be-the-first" class="btn btn-secondary btn-lg scroll">Why us?</a>
+                  <a href="#benefits" class="btn btn-secondary btn-lg scroll">Why us?</a>
                 </div>
                 <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
                   <a href="#free-analyse" class="btn btn-primary btn-lg scroll">Get free analisys</a>
@@ -143,7 +143,7 @@
 <!--/services section -->
 
 <!-- why us section -->
-  <section class="benefits">
+  <section class="benefits" id="benefits">
         <div class="beninside">
         <div class="container">
           <div class="row">
@@ -205,8 +205,73 @@
       </section>
 <!-- /why us section -->
 
+<!-- pricing section -->
+  <section class="pricing-section bg-10">
+      <h2 class="pricing-section__title">Prices</h2>
+      <div class="pricing pricing--rabten">
+          <div class="pricing__item">
+              <div class="icon trio-design2"></div>
+              <h3 class="pricing__title">Individuals</h3>
+              <p class="pricing__sentence">Single user license</p>
+              <div class="pricing__price">
+                  <span class="pricing__anim pricing__anim--1">
+          <span class="pricing__currency">$</span>9
+                  </span>
+                  <span class="pricing__anim pricing__anim--2">
+          <span class="pricing__period">per year</span>
+                  </span>
+              </div>
+              <ul class="pricing__feature-list">
+                  <li class="pricing__feature">1 GB of space</li>
+                  <li class="pricing__feature">Support at $25/hour</li>
+                  <li class="pricing__feature">Small social media package</li>
+              </ul>
+              <button class="pricing__action">Choose plan</button>
+          </div>
+          <div class="pricing__item">
+              <div class="icon trio-seo"></div>
+              <h3 class="pricing__title">Small Team</h3>
+              <p class="pricing__sentence">Up to 5 users</p>
+              <div class="pricing__price">
+                  <span class="pricing__anim pricing__anim--1">
+          <span class="pricing__currency">$</span>79
+                  </span>
+                  <span class="pricing__anim pricing__anim--2">
+          <span class="pricing__period">per year</span>
+                  </span>
+              </div>
+              <ul class="pricing__feature-list">
+                  <li class="pricing__feature">5 GB of space</li>
+                  <li class="pricing__feature">Free support</li>
+                  <li class="pricing__feature">Full social media package</li>
+              </ul>
+              <button class="pricing__action">Choose plan</button>
+          </div>
+          <div class="pricing__item">
+              <div class="icon trio-marketing"></div>
+              <h3 class="pricing__title">Organization</h3>
+              <p class="pricing__sentence">Unlimited users</p>
+              <div class="pricing__price">
+                  <span class="pricing__anim pricing__anim--1">
+          <span class="pricing__currency">$</span>499
+                  </span>
+                  <span class="pricing__anim pricing__anim--2">
+          <span class="pricing__period">per year</span>
+                  </span>
+              </div>
+              <ul class="pricing__feature-list">
+                  <li class="pricing__feature">Unlimited space</li>
+                  <li class="pricing__feature">Free support</li>
+                  <li class="pricing__feature">Full social media package</li>
+              </ul>
+              <button class="pricing__action">Choose plan</button>
+          </div>
+      </div>
+  </section>
+<!-- /pricing section -->
+
 <!--contact section -->
-  <section class="contacts clearfix">
+  <section class="contacts clearfix" id="contacts">
     <div class="col-md-6 leftside">
       <h2 class="heading-contact wow fadeIn" data-wow-delay="0">Get our help</h2>
       <ul class="phones wow fadeInUp" data-wow-delay=".3s">
