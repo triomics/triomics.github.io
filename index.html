@@ -37,12 +37,12 @@
 	    <div class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#homepage" class="scroll">Home</a></li>
-	        <li><a href="#be-the-first">Services</a></li>
-	        <li><a href="#benefits">Why us?</a></li>
-	        <li><a href="#">Portfolio</a></li>
-	        <li><a href="#">Blog</a></li>
-	        <li><a href="#contacts">Free analysis</a></li>
-	        <li><a href="#contacts">Contacts</a></li>
+	        <li><a href="#be-the-first" class="scroll">Services</a></li>
+	        <li><a href="#benefits" class="scroll">Why us?</a></li>
+	        <li><a href="#" class="scroll">Portfolio</a></li>
+	        <li><a href="#" class="scroll">Blog</a></li>
+	        <li><a href="#contacts" class="scroll">Free analysis</a></li>
+	        <li><a href="#contacts" class="scroll">Contacts</a></li>
 	      </ul>
 	    </div><!--/.navbar-collapse -->
 	  </div>
@@ -50,25 +50,25 @@
 <!-- /navigation -->
 
 <!-- header -->
-  <header>
+  <header id="homepage">
+    <div id="particles-js"></div>
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
           <a href="index.html"><img src="img/logo.svg"  width="100" height="100" alt="Logo"></a>
         </div>
         <div class="col-xs-6 signin text-right navbar-nav">
-          <a href="#homepage" class="scroll">Home</a>&nbsp; &nbsp; &nbsp;<a href="#be-the-first">Services</a>&nbsp; &nbsp; &nbsp;<a href="#benefits">Why us?</a>&nbsp; &nbsp; &nbsp;<a href="#">Portfolio</a>&nbsp; &nbsp; &nbsp;<a href="#">Blog</a>&nbsp; &nbsp; &nbsp;<a href="#contacts">Free analysis</a>&nbsp; &nbsp; &nbsp;<a href="#contacts">Contacts</a>
+          <a href="#homepage" class="scroll">Home</a>&nbsp; &nbsp; &nbsp;<a href="#be-the-first" class="scroll">Services</a>&nbsp; &nbsp; &nbsp;<a href="#benefits" class="scroll">Why us?</a>&nbsp; &nbsp; &nbsp;<a href="#" class="scroll">Portfolio</a>&nbsp; &nbsp; &nbsp;<a href="#" class="scroll">Blog</a>&nbsp; &nbsp; &nbsp;<a href="#contacts" class="scroll">Free analysis</a>&nbsp; &nbsp; &nbsp;<a href="#contacts" class="scroll">Contacts</a>
         </div>
       </div>
       
-      <div class="row header-info" id="homepage">
+      <div class="row header-info">
         <div class="col-sm-10 col-sm-offset-1 text-center">
           <h1 class="wow fadeIn">We are <a href="#" class="accent-redirect">triomics</a></h1>
           <br />
           <p class="lead wow fadeIn" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipis. <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit sit dol mi arlna.</p>
           <br />
-            
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
               <div class="row">
@@ -207,9 +207,9 @@
 
 <!-- pricing section -->
   <section class="pricing-section bg-10">
-      <h2 class="pricing-section__title">Prices</h2>
+      <h2 class="pricing-section__title wow fadeIn" data-wow-delay="0.3s">Prices</h2>
       <div class="pricing pricing--rabten">
-          <div class="pricing__item">
+          <div class="pricing__item wow fadeInUp" data-wow-delay="0.3s">
               <div class="icon trio-design2"></div>
               <h3 class="pricing__title">Individuals</h3>
               <p class="pricing__sentence">Single user license</p>
@@ -228,7 +228,7 @@
               </ul>
               <button class="pricing__action">Choose plan</button>
           </div>
-          <div class="pricing__item">
+          <div class="pricing__item wow fadeInUp" data-wow-delay="0.5s">
               <div class="icon trio-seo"></div>
               <h3 class="pricing__title">Small Team</h3>
               <p class="pricing__sentence">Up to 5 users</p>
@@ -247,7 +247,7 @@
               </ul>
               <button class="pricing__action">Choose plan</button>
           </div>
-          <div class="pricing__item">
+          <div class="pricing__item wow fadeInUp" data-wow-delay="0.7s">
               <div class="icon trio-marketing"></div>
               <h3 class="pricing__title">Organization</h3>
               <p class="pricing__sentence">Unlimited users</p>
@@ -329,6 +329,8 @@
 <script src="js/lib/classie.js"></script>
 <script src="js/lib/uiMorphingButton_fixed.js"></script>
 <!-- <script src="js/lib/uiMorphingButton_inflow.js"></script> -->
+<!-- mainpage triangle shapes script -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/script.js"></script>
 <!-- /JS -->
 </body>

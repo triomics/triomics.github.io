@@ -6,7 +6,9 @@
  *
  * Handcrafted with love in Atlanta!
  */
-
+body {
+  background: #252640;
+}
 
 /* ==========================================================================
    Global styles
@@ -129,6 +131,7 @@ a:hover, a:focus {
 .btn-primary {
   background-color: #ffb621;
   color: #252640;
+  border: 1px solid #ffb621;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -138,12 +141,14 @@ a:hover, a:focus {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #252640;
   color: #ffb621;
+  border-color: #ffb621;
 }
 
 .btn-secondary {
   background-color: #252640;
   color: #fff;
   padding: 22px 60px;
+  border: 1px solid #ffb621;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
@@ -318,9 +323,9 @@ header {
   // background: url(../img/sample4.jpg) no-repeat center center;
   width: 100%;
 
-  background: #485563; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #252640; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #252640 , rgba(255,182,33,.15)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #252640 , rgba(255,182,33,.15)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           
   padding: 20px 10px 60px 10px;
   height: 100vh;
