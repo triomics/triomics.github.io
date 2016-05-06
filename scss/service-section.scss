@@ -13,10 +13,12 @@
 			background: white;
 			position: relative;
 			margin: 0 auto;
-			transition: background-color .5s;
+			border: 2px solid transparent;
+			transition: background-color .5s, border-color .3s;
 
 			&:hover {
-			background: #252640;
+			background: transparent;
+			border: 2px solid #ffb621;
 				& span {
 					color: #ffb621;
 					font-size: 120px;
