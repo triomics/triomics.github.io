@@ -434,7 +434,15 @@ background-color:rgba(68, 80, 71, 0.8);
     
     background-color:rgb(94, 97, 82);
 }
+}
 
+.icon-why-us {
+    display: block;
+    padding-bottom: 1rem;
+    & span {
+        font-size: 5rem;
+        color: white;
+    }
 }
 
 @media screen and (max-width: 640px) {
