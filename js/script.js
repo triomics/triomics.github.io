@@ -170,4 +170,11 @@ $(document).ready(function() {
   },
   "retina_detect": true
 });
+
+  $('.post-module').hover(function() {
+    $(this).find('.description').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
 });
