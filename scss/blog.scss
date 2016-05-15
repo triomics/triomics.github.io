@@ -125,10 +125,25 @@
 .post-module .post-content .post-meta .timestamp {
   margin: 0 16px 0 0;
 }
+
+.post-module .post-content .post-meta:hover a {
+    opacity: 1;
+}
+
 .post-module .post-content .post-meta a {
   color: #999999;
   text-decoration: none;
 }
+
+.post-module .post-content .post-meta a:hover {
+    color: $accent;
+}
+
+.post-module .post-content .post-meta a+a {
+  padding-left: 15px;
+  opacity: 0;
+}
+
 .hover .post-content .description {
   display: block !important;
   height: auto !important;
