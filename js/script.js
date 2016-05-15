@@ -59,6 +59,8 @@
 	} );
 })();
 
+
+
 $(document).ready(function() {
 	particlesJS("particles-js", {
   "particles": {
@@ -176,5 +178,13 @@ $(document).ready(function() {
       height: "toggle",
       opacity: "toggle"
     }, 300);
+  });
+
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-item'
+    }
   });
 });
