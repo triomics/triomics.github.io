@@ -1,4 +1,11 @@
 #be-the-first {
+	height: 90vh;
+
+	& .container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 
 	& .our-services {
 		margin-bottom: 100px;
