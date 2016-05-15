@@ -86,3 +86,27 @@ header {
 		}
 	}
 }
+
+#homepage div.morph-button > button {
+	line-height: 60px;
+
+	&:hover {
+		background-color: $accent;
+		color: $bg;
+		transition: background .3s, color .3s;
+	}
+}
+
+#homepage .morph-button-fixed {
+	height: 60px;
+	width: 225px;
+}
+
+#homepage .morph-button.morph-button-modal-2, 
+#homepage .morph-button.morph-button-modal-3 {
+	margin-top: 0;
+}
+
+.vertical-center {
+	top: 15vh;
+}
