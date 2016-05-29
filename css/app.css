@@ -13781,12 +13781,7 @@ header .social-container .soc-item a:hover {
 
 #portfolio .portfolio-item .portfolio-content .portfolio-logo-container {
   margin: 0 auto;
-  width: 10rem;
-  height: 10rem;
-}
-
-#portfolio .portfolio-item .portfolio-content .portfolio-logo-container .portfolio-logo {
-  height: 100%;
+  text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-content .portfolio-company-title {
