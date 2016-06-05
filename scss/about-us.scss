@@ -1,0 +1,23 @@
+.about-us {
+	padding: 5rem 0;
+
+	& .about-head {
+		line-height: 1.5;
+		font-weight: 400;
+		font-size: 30px;
+	}
+
+	& .about-text {
+
+		& h3 {
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+			line-height: 1.5;
+			font-weight: 400;
+		}
+
+		& p {
+			line-height: 1.5;
+		}
+	}
+}
