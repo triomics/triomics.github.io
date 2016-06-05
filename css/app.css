@@ -13188,6 +13188,8 @@ header .social-container .soc-item a:hover {
   line-height: 1.5;
   font-weight: 400;
   font-size: 30px;
+  text-align: right;
+  padding-right: 40px;
 }
 
 .about-us .about-text h3 {
