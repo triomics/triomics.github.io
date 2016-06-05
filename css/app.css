@@ -13236,7 +13236,7 @@ header .social-container .soc-item a:hover {
 }
 
 #portfolio .portfolio-item:hover .portfolio-bg {
-  width: 100%;
+  width: 95%;
   transition: width .5s ease;
 }
 
@@ -13262,7 +13262,12 @@ header .social-container .soc-item a:hover {
 #portfolio .portfolio-item .portfolio-bg {
   position: absolute;
   width: 0;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 95%;
   background: #ffb621;
   opacity: .8;
   transition: width .3s .2s;
@@ -13330,6 +13335,11 @@ header .social-container .soc-item a:hover {
 
 #portfolio .portfolio-item .portfolio-content .tag-container .tag {
   letter-spacing: 1px;
+}
+
+.blog .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .post-module {
