@@ -13184,6 +13184,20 @@ header .social-container .soc-item a:hover {
   padding: 5rem 0;
 }
 
+.about-us .table {
+  display: table;
+}
+
+.about-us .table-row {
+  display: table-row;
+}
+
+.about-us .table-cell {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
 .about-us .about-head {
   line-height: 1.5;
   font-weight: 400;
