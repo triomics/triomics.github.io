@@ -13192,6 +13192,10 @@ header .social-container .soc-item a:hover {
   padding-right: 40px;
 }
 
+.about-us .about-head span {
+  font-style: italic;
+}
+
 .about-us .about-text h3 {
   color: white;
   font-family: 'Open Sans', sans-serif;

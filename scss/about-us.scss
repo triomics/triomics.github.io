@@ -7,6 +7,10 @@
 		font-size: 30px;
 		text-align: right;
 		padding-right: 40px;
+
+		& span {
+			font-style: italic;
+		}
 	}
 
 	& .about-text {
