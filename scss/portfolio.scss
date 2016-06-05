@@ -2,6 +2,8 @@
 
   & .grid {
     width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 
     & .grid-item {
         width: 33.333333%;
