@@ -13268,33 +13268,27 @@ header .social-container .soc-item a:hover {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 95%;
-  background: #ffb621;
+  background: white;
   opacity: .8;
   transition: width .3s .2s;
-}
-
-#portfolio .portfolio-item .portfolio-bg.bg-1 {
+  /*         &.bg-1 {
   background: #F5D81E;
 }
-
-#portfolio .portfolio-item .portfolio-bg.bg-2 {
+&.bg-2 {
   background: #A87862;
 }
-
-#portfolio .portfolio-item .portfolio-bg.bg-3 {
+&.bg-3 {
   background: #fff;
 }
-
-#portfolio .portfolio-item .portfolio-bg.bg-4 {
+&.bg-4 {
   background: #34B966;
 }
-
-#portfolio .portfolio-item .portfolio-bg.bg-5 {
+&.bg-5 {
   background: #69911B;
 }
-
-#portfolio .portfolio-item .portfolio-bg.bg-6 {
+&.bg-6 {
   background: #fff;
+}*/
 }
 
 #portfolio .portfolio-item .portfolio-content {
