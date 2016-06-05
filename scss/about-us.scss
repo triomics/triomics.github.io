@@ -1,19 +1,17 @@
 .about-us {
 	padding: 5rem 0;
 
-	& .table {
 
-		&-row {
+		& .table-row {
 			display: table-row;
 
 		}
 
-		&-cell {
+		& .table-cell {
 			display: table-cell;
 			float: none;
 			vertical-align: middle;
 		}
-	}
 
 	& .about-head {
 		line-height: 1.5;
