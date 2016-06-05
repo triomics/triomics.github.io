@@ -56,29 +56,29 @@
         left: 50%;
         transform: translate(-50%, -50%);
         height: 95%;
-        background: $accent;
+        background: white;
         opacity: .8;
         transition: width .3s .2s;
 
-        &.bg-1 {
-          background: #F5D81E;
-        }
-        &.bg-2 {
-          background: #A87862;
-        }
-        &.bg-3 {
-          background: #fff;
-        }
-        &.bg-4 {
-          background: #34B966;
-        }
-        &.bg-5 {
-          background: #69911B;
-        }
-        &.bg-6 {
-          background: #fff;
-        }
-    }
+/*         &.bg-1 {
+  background: #F5D81E;
+}
+&.bg-2 {
+  background: #A87862;
+}
+&.bg-3 {
+  background: #fff;
+}
+&.bg-4 {
+  background: #34B966;
+}
+&.bg-5 {
+  background: #69911B;
+}
+&.bg-6 {
+  background: #fff;
+}
+    } */
 
     & .portfolio-content {
         position: absolute;
