@@ -188,3 +188,23 @@ $(document).ready(function() {
     }
   });
 });
+
+
+$(document).ready(function(){
+$('#counter').countdown('2016/10/01', function(event) {
+  var $this = $(this).html(event.strftime(''
+    + '<div class="countDays"><span class="position"><span class="digit static">%D</span></span><span class="boxName"><span class="Days">DAYS</span></span></div>'
+    + '<div class="countHours"><span class="position"><span class="digit static">%H</span></span><span class="boxName"><span class="Hours">HOURS</span></span></div>'
+    + '<div class="countMinutes"><span class="position"><span class="digit static">%M</span></span><span class="boxName"><span class="Days">Minutes</span></span></div>'
+    + '<div class="countSeconds"><span class="position"><span class="digit static">%S</span></span><span class="boxName"><span class="Days">Seconds</span></span></div>'
+  ));
+});
+
+$(function(){
+      $(".accent-redirect").typed({
+        strings: ["Triomics"],
+        typeSpeed: 300
+      });
+  });
+
+})

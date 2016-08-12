@@ -15,89 +15,33 @@
     <meta property="og:description" content="">
     <!-- styles -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Ubuntu:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.countdown.css">
     <link rel="stylesheet" href="css/app.css" type='text/css' media='all'>
     <!-- /style -->
     <script src="js/lib/modernizr.custom.js"></script>
   </head>
   <body>
-    <!-- navigation -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="logo" href="index.html"><img src="img/logo-thin.svg" alt="Logo"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#homepage" class="scroll">Home</a></li>
-            <li><a href="#be-the-first" class="scroll">Services</a></li>
-            <li><a href="#benefits" class="scroll">Why us?</a></li>
-            <li><a href="#" class="scroll">Portfolio</a></li>
-            <li><a href="#" class="scroll">Blog</a></li>
-            <li><a href="#contacts" class="scroll">Free analysis</a></li>
-            <li><a href="#contacts" class="scroll">Contacts</a></li>
-          </ul>
-        </div>
-        <!--/.navbar-collapse -->
-      </div>
-    </div>
-    <!-- /navigation -->
     <!-- header -->
     <header id="homepage">
-      <div id="particles-js"></div>
+      <div id="particles-js" class="hidden-xs"></div>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-6">
-            <a href="index.html"><img src="img/logo-thin.svg"  width="80" height="80" alt="Logo"></a>
-          </div>
-          <div class="col-xs-6 signin text-right navbar-nav">
-            <a href="#homepage" class="scroll">Home</a>&nbsp; &nbsp; &nbsp;<a href="#be-the-first" class="scroll">Services</a>&nbsp; &nbsp; &nbsp;<a href="#benefits" class="scroll">Why us?</a>&nbsp; &nbsp; &nbsp;<a href="#" class="scroll">Portfolio</a>&nbsp; &nbsp; &nbsp;<a href="#" class="scroll">Blog</a>&nbsp; &nbsp; &nbsp;<a href="#contacts" class="scroll">Free analysis</a>&nbsp; &nbsp; &nbsp;<a href="#contacts" class="scroll">Contacts</a>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-sm-10 col-sm-offset-1 text-center vertical-center">
-            <h1 class="wow fadeIn">We are <a href="#" class="accent-redirect">triomics</a></h1>
-            <br />
-            <p class="lead wow fadeIn" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipis. <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit sit dol mi arlna.
-            </p>
-            <br />
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                <div class="row">
-                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                    <a href="#contacts" class="btn btn-secondary btn-lg scroll">Contact us</a>
-                  </div>
-                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                    <!-- <a href="#free-analyse" class="btn btn-primary btn-lg scroll">Get free analisys</a> -->
-                    <div class="wrapper-button">
-                      <div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-                        <button type="button" class="wow fadeInDown" data-wow-delay=".1s">Send Request</button>
-                        <div class="morph-content">
-                          <div>
-                            <div class="content-style-form content-style-form-2">
-                              <span class="icon icon-close"><span class="show-smth">&#10006;</span></span>
-                              <h2>Free analisys</h2>
-                              <form>
-                                <p><label>*Email</label><input type="text"></p>
-                                <p><label>*Website</label><input type="text"></p>
-                                <p><label>Name</label><input type="text"></p>
-                                <p><button>Send Request</button></p>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End Button Row-->  
-              </div>
+          <div class="row ">
+            <div class="col-xs-12 text-center">
+              <a href="index.html"><img src="img/logo.svg"  width="80" height="80" alt="Logo"></a>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center vertical-center">
+            <h1 class="wow fadeIn">We are <a href="#" class="accent-redirect"></a></h1>
+              <p class="lead wow fadeIn" data-wow-delay="0.5s">
+                Our WEBSITE IS COMING VERY SOON
+              </p>
+              <div class="content2">
+                <div class="timer_wrap">
+                    <div id="counter" class="countdownHolder">
+                    </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -111,95 +55,13 @@
     <div class="mouse-icon hidden-xs">
       <div class="scroll"></div>
     </div>
-
-    <!-- why us section -->
-<!--     <section class="benefits" id="benefits">
-  <div class="beninside">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="why">
-            <div class="headinginfo">
-              <h2>Why Us?</h2>
-              We offer synergistic online products, social media marketing and dynamic SEO strategies deliverin.
-            </div>
-          </div>
-          <div class="rhombus beniconsize1">
-            <div class="tralign">
-              <img class="imgbgr" alt="Global reach" src="img/ben1.jpg">
-              <div class="beniconblock bluebgr bico o0-o02">
-                <div class="icon-why-us"><span class="trio-3"></span></div>
-                <b>Hight quality</b>
-              </div>
-            </div>
-          </div>
-          <div class="rhombus beniconsize2">
-            <div class="tralign">
-              <img class="imgbgr" alt="Best Prices" src="img/ben2.jpg">
-              <div class="beniconblock bluebgr bico o0-o02">
-                <div class="icon-why-us"><span class="trio-4"></span></div>
-                <b>Transparency</b>
-              </div>
-            </div>
-          </div>
-          <div class="rhombus beniconsize3">
-            <div class="tralign">
-              <img class="imgbgr" alt="Big Expirience" src="img/ben3.jpg">
-              <div class="beniconblock lbluebgr bico o0-o02">
-                <div class="icon-why-us"><span class="trio-2"></span></div>
-                <b>Person-oriented</b>
-              </div>
-            </div>
-          </div>
-          <div class="rhombus beniconsize4">
-            <div class="tralign">
-              <img class="imgbgr" alt="Convenience" src="img/ben4.jpg">
-              <div class="beniconblock bluebgr bico o0-o02">
-                <div class="icon-why-us"><span class="trio-1"></span></div>
-                <b>Monthly reporting</b>
-              </div>
-            </div>
-          </div>
-          <div class="rhombus beniconsize5">
-            <div class="tralign">
-              <img class="imgbgr" alt="Team Strength" src="img/ben5.jpg">
-              <div class="beniconblock lbluebgr bico o0-o02">
-                <div class="icon-why-us"><span class="trio-5"></span></div>
-                <b>Onsite optimization</b>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-    <!-- /why us section -->
-
-    <!-- about us section -->
-    <section class="about-us">
-      <div class="container">
-        <div class="row table-row">
-          <div class="col-md-4 table-cell">
-            <h2 class="about-head">"There is always something more, you can always make a small step forward — there is no limit."<br/><span>Jack Kerouac</span></h2>
-          </div>
-          <div class="col-md-8 table-cell">
-            <div class="about-text">
-              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quasi cumque fugit nihil fuga nemo deleniti provident tenetur. Cumque debitis minus, quas obcaecati deleniti at incidunt ab officiis? Cupiditate, dolor.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nam, amet. Ea fuga aperiam quasi veniam officiis consequuntur, corporis ut iste sint, amet reprehenderit error, consequatur adipisci nulla ipsum totam modi qui minima? Quasi, beatae quam non. Modi, porro vitae earum assumenda animi quos corporis nulla! Dolor aliquid, molestias sit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /about us section -->
     <!--services section -->
     <section id="be-the-first" class="">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-sm-offset-1 text-center">
             <h2 class="our-services wow fadeIn" data-wow-delay="0.2s">Our services</h2>
-            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-3  col-sm-3  wow fadeInUp" data-wow-delay="0.3s">
               <div class="service-single">
                 <div class="service-icon">
                   <span class="trio-seo1"></span>
@@ -207,7 +69,7 @@
                 <h3 class="service-name">SEO</h3>
               </div>
             </div>
-            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-md-3  col-sm-3  wow fadeInUp" data-wow-delay="0.4s">
               <div class="service-single">
                 <div class="service-icon">
                   <span class="trio-marketing1"></span>
@@ -215,7 +77,7 @@
                 <h3 class="service-name">WEB MARKETING</h3>
               </div>
             </div>
-            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-md-3  col-sm-3  wow fadeInUp" data-wow-delay="0.5s">
               <div class="service-single">
                 <div class="service-icon">
                   <span class="trio-design"></span>
@@ -223,7 +85,7 @@
                 <h3 class="service-name">DESIGN</h3>
               </div>
             </div>
-            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="col-md-3  col-sm-3  wow fadeInUp" data-wow-delay="0.6s">
               <div class="service-single">
                 <div class="service-icon">
                   <span class="trio-code2"></span>
@@ -236,271 +98,13 @@
       </div>
     </section>
     <!--/services section -->
-
-
-    <!-- portfolio -->  
-    <section id="portfolio"> 
-        <h2 class="pricing-section__title wow fadeIn" data-wow-delay="0.3s">Our projects</h2>
-        <div class="wrapper"> 
-                <div class="grid clearfix"> 
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-1.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-1"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-1.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">SPV Company Ltd.</h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-2.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-2"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-2.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">"SIESTA" Hotel</h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-4.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-3"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-4.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">Locksmith Kyiv </h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-3.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-4"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-3.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">UNMOMENTO</h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-5.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-5"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-5.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">Super 3D</h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                  <div class="grid-item">
-                    <div class="portfolio-item"> 
-                      <img src="img/mockups/company-pic-6.jpg" alt="" class="portfolio-img">
-                      <div class="portfolio-bg bg-6"></div>
-                      <div class="portfolio-content">
-                          <div class="portfolio-logo-container">
-                          <img src="img/mockups/company-logo-6.png" alt="" class="portfolio-logo">
-                          </div> 
-                          <h4 class="portfolio-company-title">BloomBox Dublin</h4>
-                          <div class="divider"></div>
-                          <div class="tag-container">
-                            <span class="tag">Web Design</span><span class="divider"> / </span>
-                            <span class="tag">Programming</span><span class="divider"> / </span>
-                            <span class="tag">SEO</span>
-                          </div>
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-        </div> 
-    </section>
-    <!-- /portfolio -->
-    <!-- blog post -->
-    <section class="blog" id="blog">
-      <h2 class="wow fadeIn padding-v center" data-wow-delay="0.3s">Recent posts</h2>
-      <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="post-module wow fadeInUp" data-wow-delay=".3s">
-                <!-- Thumbnail-->
-                <div class="thumbnail">
-                  <div class="date">
-                    <div class="day">27</div>
-                    <div class="month">Mar</div>
-                  </div>
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
-                </div>
-                <!-- Post Content-->
-                <div class="post-content">
-                  <div class="category">Photos</div>
-                  <h1 class="title">City Lights in New York</h1>
-                  <h2 class="sub_title">The city that never sleeps.</h2>
-                  <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                  <div class="post-meta"><span class="comments"><i class="fa fa-share-alt"></i><a href="#"> Share</a></span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="post-module wow fadeInUp" data-wow-delay=".4s">
-                <!-- Thumbnail-->
-                <div class="thumbnail">
-                  <div class="date">
-                    <div class="day">27</div>
-                    <div class="month">Mar</div>
-                  </div>
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
-                </div>
-                <!-- Post Content-->
-                <div class="post-content">
-                  <div class="category">Photos</div>
-                  <h1 class="title">City Lights in New York</h1>
-                  <h2 class="sub_title">The city that never sleeps.</h2>
-                  <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                  <div class="post-meta"><span class="comments"><i class="fa fa-share-alt"></i><a href="#"> Share</a></span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="post-module wow fadeInUp" data-wow-delay=".5s">
-                <!-- Thumbnail-->
-                <div class="thumbnail">
-                  <div class="date">
-                    <div class="day">27</div>
-                    <div class="month">Mar</div>
-                  </div>
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
-                </div>
-                <!-- Post Content-->
-                <div class="post-content">
-                  <div class="category">Photos</div>
-                  <h1 class="title">City Lights in New York</h1>
-                  <h2 class="sub_title">The city that never sleeps.</h2>
-                  <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                  <div class="post-meta"><a href="#"><span class="comments"><i class="fa fa-share-alt"></i> Share</span></a><a href="#"><span class="comments"><i class="fa fa-facebook"></i></span></a><a href="#"><span class="comments"><i class="fa fa-twitter"></i></span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /blog post -->
-    <!-- pricing section -->
-    <section class="pricing-section bg-10">
-      <h2 class="pricing-section__title wow fadeIn" data-wow-delay="0.3s">Prices</h2>
-      <div class="pricing pricing--rabten">
-        <div class="pricing__item wow fadeInUp" data-wow-delay="0.3s">
-          <div class="icon trio-s"></div>
-          <h3 class="pricing__title">Silver</h3>
-          <p class="pricing__sentence">Low Competition Search Terms</p>
-          <!-- <div class="pricing__price">
-            <span class="pricing__anim pricing__anim--1">
-            <span class="pricing__currency">$</span>9
-            </span>
-            <span class="pricing__anim pricing__anim--2">
-            <span class="pricing__period">per year</span>
-            </span>
-          </div> -->
-          <ul class="pricing__feature-list">
-            <li class="pricing__feature">Cars</li>
-            <li class="pricing__feature">A house and a garden</li>
-            <li class="pricing__feature">Childen's goods</li>
-            <li class="pricing__feature">Tourism</li>
-          </ul>
-          <button class="pricing__action">Choose plan</button>
-        </div>
-        <div class="pricing__item wow fadeInUp" data-wow-delay="0.5s">
-          <div class="icon trio-g"></div>
-          <h3 class="pricing__title">Golden</h3>
-          <p class="pricing__sentence">Medium Competition Search Terms</p>
- <!--          <div class="pricing__price">
-   <span class="pricing__anim pricing__anim--1">
-   <span class="pricing__currency">$</span>79
-   </span>
-   <span class="pricing__anim pricing__anim--2">
-   <span class="pricing__period">per year</span>
-   </span>
- </div> -->
-          <ul class="pricing__feature-list">
-            <li class="pricing__feature">Finance</li>
-            <li class="pricing__feature">Manufacturing</li>
-            <li class="pricing__feature">Clothing and footwear</li>
-            <li class="pricing__feature">Building materials</li>
-          </ul>
-          <button class="pricing__action">Choose plan</button>
-        </div>
-        <div class="pricing__item wow fadeInUp" data-wow-delay="0.7s">
-          <div class="icon trio-p"></div>
-          <h3 class="pricing__title">Platinum</h3>
-          <p class="pricing__sentence">High Competition Search Terms</p>
-          <!-- <div class="pricing__price">
-            <span class="pricing__anim pricing__anim--1">
-            <span class="pricing__currency">$</span>499
-            </span>
-            <span class="pricing__anim pricing__anim--2">
-            <span class="pricing__period">per year</span>
-            </span>
-          </div> -->
-          <ul class="pricing__feature-list">
-            <li class="pricing__feature">Real Estate</li>
-            <li class="pricing__feature">Printing and Finance</li>
-            <li class="pricing__feature">Furniture & Interior</li>
-            <li class="pricing__feature">Office</li>
-          </ul>
-          <button class="pricing__action">Choose plan</button>
-        </div>
-      </div>
-    </section>
-    <!-- /pricing section -->
     <!--contact section -->
     <section class="contacts clearfix" id="contacts">
       <div class="col-md-6 leftside">
         <h2 class="heading-contact wow fadeIn" data-wow-delay="0">Get our help</h2>
         <ul class="phones wow fadeInUp" data-wow-delay=".3s">
-          <li class="phone-number">+38 067 333 77 55</li>
-          <li class="phone-number">+38 063 777 33 55</li>
-          <li class="phone-number">+38 050 555 77 33</li>
+          <li class="phone-number">+38 066 639 39 87</li>
+          <li class="phone-number">+38 063 611 78 41</li>
         </ul>
         <p class="email wow fadeInUp" data-wow-delay=".5s"><a href="mailto:triomics.ua@gmail.com" class="email-link">triomics.ua@gmail.com</a></p>
         <!-- <p class="sub-heading">SOCIAL</p> -->
@@ -553,6 +157,8 @@
     <script src="js/lib/isotope.pkgd.min.js"></script>
     <!-- mainpage triangle shapes script -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/typed.js"></script>
     <script src="js/script.js"></script>
     <!-- /JS -->
   </body>
