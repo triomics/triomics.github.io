@@ -13863,7 +13863,6 @@ header .social-container .soc-item a:hover {
 
 .contacts .rightside .heading-contact {
   color: #ffb621;
-  margin-bottom: 110px;
 }
 
 .contacts .rightside .wrapper-button {
@@ -14445,36 +14444,19 @@ header .social-container .soc-item a:hover {
   padding: 10px 30px;
 }
 
-.content-style-form form p {
-  margin: 0 0 5px 0;
-  font-size: 0.7em;
-}
-
-.content-style-form label {
-  display: block;
-  padding: 10px 0 0;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-
-.content-style-form input[type="text"],
-.content-style-form input[type="password"] {
+.content-style-form input[type="text"]{
   padding: 10px;
+  margin: 10px 0; 
   width: 100%;
   border: 1px solid #fff;
   background: transparent;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: 300;
-  font-size: 2.2em;
   letter-spacing: 1px;
 }
 
-.content-style-form input[type="text"]:focus,
-.content-style-form input[type="password"]:focus {
+.content-style-form input[type="text"]:focus {
   border-color: #ffb621;
   color: #ffb621;
 }
@@ -14483,10 +14465,10 @@ header .social-container .soc-item a:hover {
   outline: 0;
 }
 
-.content-style-form button {
+.content-style-form input[type="submit"] {
   display: block;
-  margin-top: 2.5em;
-  padding: 1.5em;
+  margin-top: 10px;
+  padding: 10px;
   width: 100%;
   border: none;
   background: #ffb621;
@@ -14500,7 +14482,7 @@ header .social-container .soc-item a:hover {
   transition: border-color .3s, color .3s, background .3s;
 }
 
-.content-style-form button:hover {
+.content-style-form input[type="submit"]:hover {
   background: #252640;
   color: #ffb621;
   border: 1px solid #ffb621;

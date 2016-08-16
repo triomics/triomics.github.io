@@ -115,25 +115,18 @@
         </ul>
       </div>
       <div class="col-md-6 rightside">
-        <h2 id="free-analyse" class="heading-contact wow fadeIn" data-wow-delay="0">Get free analisys</h2>
-        <div class="wrapper-button">
-          <div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-            <button type="button" class="wow fadeInDown" data-wow-delay=".1s">Send Request</button>
-            <div class="morph-content">
-              <div>
-                <div class="content-style-form content-style-form-2">
-                  <span class="icon icon-close"><span class="show-smth">&#10006;</span></span>
-                  <h2>Free analisys</h2>
-                  <form>
-                    <p><label>*Email</label><input type="text"></p>
-                    <p><label>*Website</label><input type="text"></p>
-                    <p><label>Name</label><input type="text"></p>
-                    <p><button>Send Request</button></p>
-                  </form>
-                </div>
-              </div>
+        <h2 id="free-analyse" class="heading-contact wow fadeIn" data-wow-delay="0">Contact us</h2>
+            <div class="content-style-form content-style-form-2">
+              <form id="ajaxform" action="">
+                <input type="text" name="email" placeholder="Email*">
+                <span class="required" style="color:red"></span>
+                <input type="text" name="website" placeholder="Website*">
+                <span class="required" style="color:red"></span>
+                <input type="text" name="name" placeholder="Name">
+                <input type="submit" value="Send Request" class="btn btn-primary form-btn" id="submit"/>
+                <span class="msg-sent" style="color:red"></span>
+              </form>
             </div>
-          </div>
         </div>
       </div>
     </section>

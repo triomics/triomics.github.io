@@ -191,6 +191,9 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
+
+// таймер і макет для нього:
+
 $('#counter').countdown('2016/10/01', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="countDays"><span class="position"><span class="digit static">%D</span></span><span class="boxName"><span class="Days">DAYS</span></span></div>'
@@ -200,11 +203,57 @@ $('#counter').countdown('2016/10/01', function(event) {
   ));
 });
 
+// тайпед для Triomics 
+
 $(function(){
       $(".accent-redirect").typed({
         strings: ["Triomics"],
         typeSpeed: 300
       });
   });
+
+//ajax обробник форми
+
+//ajax форма
+
+$("#ajaxform").submit(function(){ 
+var form = $(this); 
+          var error = false; 
+          form.find('input').each( function(){ 
+            if ($(this).val() == '') { 
+              $(".required").html('This field is required'); 
+              error = true; 
+            }
+          });
+          if (!error) { 
+            var data = form.serialize(); 
+            $.ajax({ 
+              type: 'POST', 
+              url: 'https://enasos.com.ua/triomics/send.php', 
+              dataType: 'json', 
+              data: data, 
+                beforeSend: function(data) { 
+                      form.find('input[type="submit"]').attr('disabled', 'disabled'); 
+                    },
+                success: function(data){ 
+                    if (data['error']) { 
+                      alert(data['error']); 
+                    } else { // якщо все пішло добре
+					            $(".required").css('display','none');
+                      $(".msg-sent").html('Message sent'); 
+                    }
+                  },
+                error: function (xhr, ajaxOptions, thrownError) { 
+                      alert(xhr.status); 
+                      alert(thrownError); 
+                  },
+                complete: function(data) { 
+                      form.find('input[type="submit"]').prop('disabled', false); 
+                  }
+                            
+                });
+          }
+          return false; 
+    });
 
 })
