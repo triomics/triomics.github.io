@@ -240,15 +240,11 @@ var form = $(this);
                       alert(data['error']); 
                     } else { // якщо все пішло добре
 					            $(".required").css('display','none');
-                      $(".msg-sent").html('Message sent'); 
                     }
-                  },
-                error: function (xhr, ajaxOptions, thrownError) { 
-                      alert(xhr.status); 
-                      alert(thrownError); 
                   },
                 complete: function(data) { 
                       form.find('input[type="submit"]').prop('disabled', false); 
+                      $(".msg-sent").html('Message sent'); 
                   }
                             
                 });
