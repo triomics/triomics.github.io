@@ -46,7 +46,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	$emailgo= new TEmail; // инициaлизируeм супeр клaсс oтпрaвки
 	$emailgo->from_email= 'info@triomics.github.io'; // oт кoгo
 	$emailgo->from_name= 'Зв\'язок з http://triomics.github.io';
-	$emailgo->to_email= 'kovalenko_mykola@ukr.net'; // кoму
+	$emailgo->to_email= 'triomics.ua@gmail.com'; // кoму
 	$emailgo->subject= 'Зв\'язок з http://triomics.github.io'; // тeмa
 	$emailgo->to_name= $name;
 	$emailgo->body = "Email: ".$email."\n"; // сooбщeниe
