@@ -12930,9 +12930,36 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   margin-top: 10px;
 }
 
+.row {
+  margin: 0;
+}
+
+.masg-sent {
+  width: 27rem;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 40px;
+  text-align: center;
+  background: #ffb621;
+  background-color: #ffb621;
+  color: #252640 !important;
+  font-size: 17px;
+  text-transform: uppercase;
+  box-shadow: inset 0px 0px 0px 2px #252640;
+  border: 2px solid #ffb621;
+}
+
 @media screen and (max-width: 768px) {
   #ajaxform {
     padding: 10px 0;
+  }
+  .msg-sent {
+    width: 70%;
   }
 }
 
