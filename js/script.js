@@ -245,8 +245,9 @@ var form = $(this);
                 complete: function(data) { 
                       form.find('input[type="submit"]').prop('disabled', false); 
                       $(".required").css('display','none');
-                      $(".msg-sent").html('Message sent').fadeIn(2000); 
-                      setTimeout(function(){$('.msg-sent').fadeOut();}, 2000);
+                      $(".msg-sent").html('Message sent').fadeIn(1000); 
+                      setTimeout(function(){$('.msg-sent').fadeOut();}, 3000);
+                      $('input').val('');
                   }
                             
                 });
