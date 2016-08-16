@@ -26,7 +26,11 @@ h1 {
   line-height: 55px;
   letter-spacing: -1px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 300;
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 h2 {
@@ -49,7 +53,7 @@ h3 {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {
@@ -327,9 +331,9 @@ header {
   width: 100%;
 
   background: #252640; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #252640 , rgba(255,182,33,.15)); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #252640 , rgba(255,182,33,.15)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          
+/*   background: -webkit-linear-gradient(to left, #252640 , rgba(255,182,33,.15)); Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to left, #252640 , rgba(255,182,33,.15)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+         */
   padding: 20px 10px 60px 10px;
   height: 100vh;
   overflow: hidden;
@@ -338,6 +342,13 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  box-sizing: border-box;
+  border: 25px solid #ffb621;
+
+  @media screen and (max-width: 768px) {
+    border: none;
+    padding: 20px 0 60px 0;
+  }
 }
 
 .header-info {
@@ -718,7 +729,7 @@ footer {
 
 #be-the-first { 
       background-attachment: scroll;
-      padding: 80px 0;
+      padding: 20px 0;
   }
 
 #be-the-first .col-sm-offset-1 {
@@ -788,7 +799,35 @@ header .row .col-xs-6 a img{
 
 }   
 
+.accent-redirect {
+  color: #ffb621; 
+  font-weight: 400;
+}
 
+.content-style-form input[type="text"], .content-style-form input[type="password"] {
+  font-size: 1.2em !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
+button, html input[type=button], input[type=reset], input[type=submit] {
+  width: 100% !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+}
 
+.required {
+  
+}
+
+@media screen and (max-width: 768px) {
+  #ajaxform {
+    padding: 10px 0;
+  }
+}
+
+#ajaxform input:first-child {
+  margin-top: 0;
+}
 

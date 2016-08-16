@@ -4016,26 +4016,6 @@ p {
   .lead {
     font-size: 21px;
   }
-
-  #be-the-first .container {
-    min-height: 60vh;
-  }
-
-  .countDays, .countHours, .countMinutes, .countSeconds {
-	  display: inline-block;
-    width: 126px;
-    height:126px;
-    margin-left: 10px;
-    background: rgba(0, 0, 0, 0.41);
-  }
-
-  header {
-    height: 100vh; 
-  }
-
-  .vertical-center {
-    top: 15vh;
-  }
 }
 
 .small, small {
@@ -12191,7 +12171,14 @@ h1 {
   line-height: 55px;
   letter-spacing: -1px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 h2 {
@@ -12214,7 +12201,7 @@ h3 {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {
@@ -12491,16 +12478,26 @@ header {
   width: 100%;
   background: #252640;
   /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #252640, rgba(255, 182, 33, 0.15));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*   background: -webkit-linear-gradient(to left, #252640 , rgba(255,182,33,.15)); Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to left, #252640 , rgba(255,182,33,.15)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+         */
   padding: 20px 10px 60px 10px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  box-sizing: border-box;
+  border: 25px solid #ffb621;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    border: none;
+    padding: 20px 0 60px 0;
+  }
 }
 
 .header-info {
@@ -12867,7 +12864,7 @@ footer {
   }
   #be-the-first {
     background-attachment: scroll;
-    padding: 80px 0;
+    padding: 20px 0;
   }
   #be-the-first .col-sm-offset-1 {
     margin-left: 0;
@@ -12915,6 +12912,34 @@ footer {
 
 /* Desktops and laptops ----------- */
 /* Large screens ----------- */
+.accent-redirect {
+  color: #ffb621;
+  font-weight: 400;
+}
+
+.content-style-form input[type="text"], .content-style-form input[type="password"] {
+  font-size: 1.2em !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  width: 100% !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #ajaxform {
+    padding: 10px 0;
+  }
+}
+
+#ajaxform input:first-child {
+  margin-top: 0;
+}
+
 @font-face {
   font-family: 'triomics-ico';
   src: url("../fonts/trio/triomics-ico.eot?smr5v0");
@@ -13026,13 +13051,16 @@ footer {
   margin: 0 auto;
 }
 
-.accent-redirect {
+.header-info .accent-redirect {
   color: #ffb621;
   font-weight: 700;
 }
 
+.header-info .accent-redirect:hover {
+  color: #252640;
+}
 
-h1 {
+.header-info h1 {
   letter-spacing: 1px;
   font-weight: 400;
 }
@@ -13048,7 +13076,7 @@ header .social-container {
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 70px;
 }
 
@@ -13135,9 +13163,29 @@ header .social-container .soc-item a:hover {
   margin-top: 0;
 }
 
+.vertical-center {
+  top: 0;
+}
+
+#homepage .container {
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  #homepage .container {
+    margin-top: 5rem;
+  }
+}
 
 #be-the-first .container {
   position: relative;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  #be-the-first .container {
+    padding: 20px 0 !important;
+  }
 }
 
 #be-the-first .our-services {
@@ -13772,6 +13820,7 @@ header .social-container .soc-item a:hover {
   line-height: 2;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.5px;
+  font-weight: 300;
   color: #ffb621;
   position: relative;
 }
@@ -13819,6 +13868,7 @@ header .social-container .soc-item a:hover {
 
 .contacts .leftside .email .email-link {
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   color: #ffb621;
 }
 
@@ -13863,6 +13913,7 @@ header .social-container .soc-item a:hover {
 
 .contacts .rightside .heading-contact {
   color: #ffb621;
+  margin-bottom: 50px;
 }
 
 .contacts .rightside .wrapper-button {
@@ -14444,19 +14495,36 @@ header .social-container .soc-item a:hover {
   padding: 10px 30px;
 }
 
-.content-style-form input[type="text"]{
+.content-style-form form p {
+  margin: 0 0 5px 0;
+  font-size: 0.7em;
+}
+
+.content-style-form label {
+  display: block;
+  padding: 10px 0 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.content-style-form input[type="text"],
+.content-style-form input[type="password"] {
   padding: 10px;
-  margin: 10px 0; 
   width: 100%;
   border: 1px solid #fff;
   background: transparent;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: 300;
+  font-size: 2.2em;
   letter-spacing: 1px;
 }
 
-.content-style-form input[type="text"]:focus {
+.content-style-form input[type="text"]:focus,
+.content-style-form input[type="password"]:focus {
   border-color: #ffb621;
   color: #ffb621;
 }
@@ -14465,10 +14533,10 @@ header .social-container .soc-item a:hover {
   outline: 0;
 }
 
-.content-style-form input[type="submit"] {
+.content-style-form button {
   display: block;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 2.5em;
+  padding: 1.5em;
   width: 100%;
   border: none;
   background: #ffb621;
@@ -14482,7 +14550,7 @@ header .social-container .soc-item a:hover {
   transition: border-color .3s, color .3s, background .3s;
 }
 
-.content-style-form input[type="submit"]:hover {
+.content-style-form button:hover {
   background: #252640;
   color: #ffb621;
   border: 1px solid #ffb621;
@@ -14824,70 +14892,4 @@ footer .copyrights {
 footer .copyrights .copyright-text {
   margin: 0;
   font-size: 14px;
-}
-
-/* ---------- TIMER ---------- */
-.timer_wrap{
-    width:100%;
-    margin: 0 auto;
-}
-#counter {
-    font-size:60px;
-    color: #FFF;
-}
-
-.countDays, .countHours, .countMinutes, .countSeconds {
-    margin-left: 10px;
-    background: rgba(0, 0, 0, 0.41);
-    height: 126px;
-    margin: 10px 0;
-    margin-left: 10px;
-}
-.points {
-    float: left;
-    width:40px;
-    margin: 0;
-    font-size: 44px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 138px;
-    text-shadow: none;
-    color:#FFF;
-    display: none;
-}
-.boxName {
-	  float: left;
-    width: 100%;
-    font-size: 13px;
-    color: #fff;
-    font-weight: 400;
-    padding: 2px;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-}
-.countDays span.points {
-    font-size: 1.1em;
-}
-/* ---------- /TIMER ---------- */
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
