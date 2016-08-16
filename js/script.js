@@ -229,7 +229,7 @@ var form = $(this);
             var data = form.serialize(); 
             $.ajax({ 
               type: 'POST', 
-              url: 'https://enasos.com.ua/triomics/send.php', 
+              url: 'send.php', 
               dataType: 'json', 
               data: data, 
                 beforeSend: function(data) { 
