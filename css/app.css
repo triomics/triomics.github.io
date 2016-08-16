@@ -12938,6 +12938,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   width: 27rem;
   position: fixed;
   z-index: 999;
+  display: none;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
