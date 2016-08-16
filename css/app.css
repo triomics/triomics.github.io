@@ -12934,7 +12934,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   margin: 0;
 }
 
-.masg-sent {
+.msg-sent {
   width: 27rem;
   position: fixed;
   z-index: 999;
