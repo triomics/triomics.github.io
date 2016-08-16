@@ -247,7 +247,7 @@ var form = $(this);
                       $(".required").css('display','none');
                       $(".msg-sent").html('Message sent').fadeIn(1000); 
                       setTimeout(function(){$('.msg-sent').fadeOut();}, 3000);
-                      $('input:not([type="submit"]),').val('');
+                      $( 'input' ).not( '[type="submit"]' ).val( '' );
                   }
                             
                 });
