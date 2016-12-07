@@ -1703,6 +1703,11 @@ footer img {max-width: 156px;}
     padding-left: 10px;
 }
 
+.js-preloader {
+	height: 100%;
+	overflow:hidden;
+}
+
 .bg-color {
   position: fixed;
   top: 0;
