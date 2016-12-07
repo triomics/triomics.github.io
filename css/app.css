@@ -293,7 +293,7 @@ i { color: #9a9a9a; margin:0}
 .bg-white-transparent{ background: rgba(255,255,255,.3) !important}
 .bg-yellow{ background: #e6af2a !important; }
 .bg-deep-yellow{ background: #c8a64b !important; }
-.bg-golden-yellow{ background: #ffd800 !important; }
+.bg-golden-yellow{ background: #ffb621 !important; }
 .bg-fast-yellow{ background: #fdd947 !important; }
 .bg-dark-gray{ background: #252525 !important; }
 .bg-mid-gray{ background: #d4d4d4 !important; }
@@ -652,6 +652,9 @@ section { padding: 130px 0; }
 .highlight-button-white-border{ border: 4px solid #fff; background-color: transparent; font-size: 22px; padding: 20px 30px; color: #fff;}
 .highlight-button-white-border:hover, .highlight-button-white-border:focus { border: 4px solid #fff; background-color: #fff; color: #000}
 
+.highlight-button-accent-border{ border: 4px solid #ffb621; background-color: transparent; font-size: 22px; padding: 20px 30px; color: #ffb621;}
+.highlight-button-accent-border:hover, .highlight-button-white-border:focus { border: 4px solid #ffb621; background-color: #ffb621; color: #000}
+
 .highlight-button-gray-border{ border: 4px solid rgba(255,255,255,.4); background-color: transparent; font-size: 22px; padding: 20px 30px; color: #ababab;}
 .highlight-button-gray-border:hover, .highlight-button-gray-border:focus { border: 4px solid rgba(255,255,255,.4); background:rgba(255,255,255,.2); color: #fff}
 
@@ -704,7 +707,7 @@ section { padding: 130px 0; }
 .owl-carousel:hover .owl-next { opacity: 1; right: -35px; }
 .owl-pagination { bottom: 30px; display: block; left: 0; position: absolute; text-align: center; width: 100%; z-index: 5 !important; }
 .owl-page { display: inline-block; padding: 6px 5px; }
-.owl-page span { background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7); border-radius: 4px; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); display: block; height: 7px; transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s; width: 7px; }
+.owl-page span { background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7); border-radius: 0; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); display: block; height: 7px; transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s; width: 25px; }
 .owl-page:hover span { background: none repeat scroll 0 0 rgba(255, 255, 255, 1); }
 .owl-page.active span { background: none repeat scroll 0 0 transparent; border: 1px solid rgba(255, 255, 255, 0.8); transform: scale(1.33333); }
 .owl-bg-img { background-position: center center; background-repeat: no-repeat; background-size: cover; display: block; overflow: hidden; position: relative; width: 100%; }
@@ -894,7 +897,7 @@ nav.sidebar-nav .container { vertical-align: top; padding:60px 40px }
 .portfolio-filter-tab li:last-child { margin-right: 0}
 .portfolio-filter-tab li:first-child { margin-left: 0}
 .portfolio-filter-tab li a {border: none !important; padding: 0; border-radius:0; padding: 5px 10px 3px 10px}
-.portfolio-filter-tab li a:hover, .portfolio-filter-tab li:active, .portfolio-filter-tab li.active a {border: none; background-color: #fdd947 !important; color: #000 !important}
+.portfolio-filter-tab li a:hover, .portfolio-filter-tab li:active, .portfolio-filter-tab li.active a {border: none; background-color: #ffb621 !important; color: #000 !important}
 
 .nav-tabs li a {margin: 0; line-height: 17px}
 
@@ -961,7 +964,7 @@ ul.portfolio-filter-tab-style-6 { margin: 220px 50px 0 0;}
 .grid-style1 .grid figcaption {  opacity: 0; text-align: center; height: calc(100% - 60px); width: calc(100% - 60px); left: 30px; top: 30px;  position: absolute; background: #fff }
 .grid-style1 .grid figcaption h3 { font-size: 18px; line-height: 25px; margin: 0; width: 100%; padding: 0 15px; text-align: center; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: relative}
 .grid-style1 .grid figcaption h3 span {margin-top: 5px;}
-.grid-style1-border {  border: 8px solid #fdd947; height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
+.grid-style1-border {  border: 8px solid #ffb621; height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
 
 /* grid - style 2 */
 .grid-style2 .grid figure { -webkit-transition: opacity 0.2s; transition: opacity 0.2s; background: #999999}
@@ -1442,7 +1445,7 @@ footer img {max-width: 156px;}
 
 .service { min-height: 684px}
 .service-sub {border: 6px solid transparent; padding: 24px}
-.service-sub:hover {border: 6px solid #fdd947; padding: 24px;/* background: #fff*/}
+.service-sub:hover {border: 6px solid #ffb621; padding: 24px;/* background: #fff*/}
 .agency-skill {min-height: 500px;}
 .work-with-us {padding: 80px 0}
 
@@ -1692,4 +1695,8 @@ footer img {max-width: 156px;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .fix-background-webkit{ background-attachment: scroll !important;}
     .no-transition-ipad *{ transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
+}
+
+.post-details .text-uppercase {
+    padding-left: 10px;
 }

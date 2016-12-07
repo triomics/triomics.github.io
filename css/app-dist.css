@@ -136,7 +136,7 @@ h1.page-title { margin:95px auto 0; width: 100%; }
 .white-text{ color:#FFF !important}
 .magenta-text{ color:#d94378 !important}
 .orange-text{ color:#ff513b !important}
-.deep-orange-text{ color:#d66e4a !important}
+.deep-orange-text{ color:#ffb621 !important}
 .deep-red-text{ color:#e75e50 !important}
 .black-text{ color:#000 !important}
 .yellow-text{ color:#fdd947 !important}
@@ -293,7 +293,7 @@ i { color: #9a9a9a; margin:0}
 .bg-white-transparent{ background: rgba(255,255,255,.3) !important}
 .bg-yellow{ background: #e6af2a !important; }
 .bg-deep-yellow{ background: #c8a64b !important; }
-.bg-golden-yellow{ background: #ffb621 !important; }
+.bg-golden-yellow{ background: #ffd800 !important; }
 .bg-fast-yellow{ background: #fdd947 !important; }
 .bg-dark-gray{ background: #252525 !important; }
 .bg-mid-gray{ background: #d4d4d4 !important; }
@@ -322,7 +322,7 @@ i { color: #9a9a9a; margin:0}
 .bg-violet { background:#6c407e !important}
 .bg-light-gray { background: #f7f7f7 !important; }
 .bg-brown {background: #614c45 !important}
-.bg-deep-orange {background: #d66e4a !important}
+.bg-deep-orange {background: #ffb621 !important}
 .bg-transparent-blue { background: rgba(0,239,255,.5) !important}
 .bg-transparent-green{ background: rgba(0,255,151,.5) !important}
 .bg-fast-green{ background: #00ff97 !important}
@@ -912,7 +912,7 @@ ul.portfolio-filter-tab-style-3 { border-bottom: none;}
 .portfolio-filter-tab-style-3 li:last-child {margin-right:0 !important }
 .portfolio-filter-tab-style-3 li:first-child {margin-left:0 !important }
 .portfolio-filter-tab-style-3 li a {border: none !important; border-radius:0; padding: 4px 10px; color: #9b9b9b}
-.portfolio-filter-tab-style-3 li a:hover, .portfolio-filter-tab-style-3 li:active, .portfolio-filter-tab-style-3 li.active a {border-bottom: none; background-color: #d66e4a !important; color: #fff !important}
+.portfolio-filter-tab-style-3 li a:hover, .portfolio-filter-tab-style-3 li:active, .portfolio-filter-tab-style-3 li.active a {border-bottom: none; background-color: #ffb621 !important; color: #fff !important}
 
 /* portfolio filter tab - style 4 */
 ul.portfolio-filter-tab-style-4 { border-bottom: none;}
@@ -1442,7 +1442,7 @@ footer img {max-width: 156px;}
 
 .service { min-height: 684px}
 .service-sub {border: 6px solid transparent; padding: 24px}
-.service-sub:hover {border: 6px solid #fdd947; padding: 24px; background: #fff}
+.service-sub:hover {border: 6px solid #fdd947; padding: 24px;/* background: #fff*/}
 .agency-skill {min-height: 500px;}
 .work-with-us {padding: 80px 0}
 
