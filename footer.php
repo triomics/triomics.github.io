@@ -1,5 +1,5 @@
         <!-- footer -->
-        <footer class="wow fadeIn cover-background" style="background-image:url('images/travel-img37.jpg');">
+        <footer class="wow fadeIn cover-background" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/travel-img37.jpg');">
             <div class="opacity-light bg-dark-blue"></div>
             <div class="footer-top position-relative">
                 <div class="container">
@@ -9,10 +9,10 @@
                         </div>
                         <!-- social media link -->
                         <div class="col-md-12 col-sm-12 center-col text-center">
-                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
-                        </div>
+                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://www.facebook.com/triomics/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://twitter.com/TriomicsCA" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a class="btn social-icon button no-letter-spacing no-margin padding-one-half no-padding-tb no-padding-left" href="https://vk.com/triomics/" target="_blank"><i class="fa fa-vk"></i></aЮ
+						</div>
                         <!-- end social media link -->
                     </div>
                 </div>
@@ -22,10 +22,10 @@
                     <!-- footer logo -->
                     <div class="row border-top border-transperent-white-light padding-four no-padding-lr xs-padding-twenty-three xs-no-padding-lr">
                         <div class="col-md-12 col-sm-12 text-center margin-one no-margin-top no-margin-lr">
-                            <a class="inner-link" href="#home"><img src="images/triomics-logo4.svg" alt=""/></a>
+                            <a class="inner-link" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/images/triomics-logo4.svg" alt=""/></a>
                         </div>
                         <div class="col-md-12 col-sm-12 text-center">
-                            <span class="text-small text-uppercase letter-spacing-1 light-gray-text alt-font">&COPY; 2016 Web site is proudly powered by TRIOMICS TEAM</span>
+                            <span class="text-small text-uppercase letter-spacing-1 light-gray-text alt-font">&COPY; 2016 Web site is created with <i class="fa fa-heart"></i> by TRIOMICS TEAM</span>
                         </div>
                     </div>
                     <!-- end footer logo -->

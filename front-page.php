@@ -1422,7 +1422,7 @@
                     <textarea name="comment" id="comment" placeholder="YOUR MESSAGE" class="big-input alt-font"></textarea>
                     <!-- end textarea  -->
                     <!-- button  -->
-                    <button id="agency-contact-button" type="submit" class="highlight-button-dark btn btn-medium">Submit</button>
+                    <button id="agency-contact-button" type="submit" class="highlight-button-accent-border btn btn-medium">Submit</button>
                     <!-- end button  -->
                 </form>
             </div>

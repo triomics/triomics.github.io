@@ -87,7 +87,7 @@
                             <a class="margin-ten no-margin-top no-margin-bottom no-margin-right" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin dark-gray-text title-medium"></i></a>
                         </div>
                         <!-- end social media icon -->
-                        <div class="bg-fast-yellow separator-line-thick-full no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick-full no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                     </article>
                     <!-- blog comment -->
                     <div class="blog-comment-main xs-no-padding-top">
@@ -117,7 +117,7 @@
                                 <p class="margin-five no-margin-lr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 <a class="btn-black btn btn-very-small no-margin inner-link" href="#addcomment">Post Reply</a>
                             </div>
-                            <div class="bg-fast-yellow separator-line-thick-full no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick-full no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         </div>
                     </div>
                     <!-- end blog comment -->
@@ -156,7 +156,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Categories</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body">
                             <ul class="category-list">
                                 <li><a href="blog.html">Web Design</a></li>
@@ -172,7 +172,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">About Me</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body">
                             <img src="http://placehold.it/600x255" alt="" />
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 margin-twenty-two display-block no-margin-lr no-margin-bottom  xs-margin-five xs-no-margin-lr">John Deo</span>
@@ -183,7 +183,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Text Widget</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body">
                             <p>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the of type and scrambled it to make a type specimen.</p>
                         </div>
@@ -192,7 +192,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Popular Posts</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body">
                             <ul class="widget-posts">
                                 <li><a href="blog-details.html">Standard Post with Gallery</a>Saturday - June 15, 2013</li>
@@ -206,7 +206,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Tags</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body tags">
                             <a href="blog.html">Advertisement</a><a href="blog.html">Fashion</a><a href="blog.html">Sea</a><a href="blog.html">Forest</a><a href="blog.html">Nature</a><a href="blog.html">Portrait</a><a href="blog.html">Wordpress</a><a href="blog.html">Photo</a><a href="blog.html">Sky</a>
                         </div>
@@ -215,7 +215,7 @@
                     <!-- widget  -->
                     <div class="widget">
                         <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Recent Comments</span>
-                        <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                        <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                         <div class="widget-body">
                             <ul class="widget-list">
                                 <li>

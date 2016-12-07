@@ -11,21 +11,21 @@
         <meta name="author" content="Triomics">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon//apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/images/favicon/manifest.json">
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/images/favicon//apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="<?php echo get_template_directory_uri(); ?>/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/images/favicon/manifest.json">
         <!-- animation -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>//css/animate.css" />
         <!-- bootstrap -->
@@ -44,10 +44,19 @@
         <!-- responsive css -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
         <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
+            <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
         <![endif]-->
+		<?php wp_head(); ?>
     </head>
-	<body style="background:url('images/travel-img1.jpg') top #1e2126 no-repeat;">
+	<body <?php if (is_front_page()) { ?>style="background:url('images/travel-img1.jpg') top #1e2126 no-repeat;"<?php } ?>>
+		<div class="bg-color"></div>
+		<div class="preloader">
+		  <div class="rel-pos">
+			<div class="square-1"></div>
+			<div class="letter">T</div>
+			<div class="square-2"></div>
+		  </div>
+		</div>
         <!-- navigation -->
         <nav class="navbar no-margin-bottom no-border navbar-height alt-font">
             <div class="container navigation-menu">
@@ -60,7 +69,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand inner-link" href="#home"><img src="images/triomics-logo4.svg" alt=""/></a>
+                        <a class="navbar-brand inner-link" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/images/triomics-logo4.svg" alt=""/></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">

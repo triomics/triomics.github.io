@@ -50,7 +50,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -94,7 +94,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -127,7 +127,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -169,7 +169,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -199,7 +199,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -227,7 +227,7 @@
                                     <a href="blog-details.html" class="btn-black btn btn-very-small no-margin">Continue Reading</a>
                                 </div>
                                 <div class="col-md-12 col-sm-12 no-padding">
-                                    <div class="bg-fast-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
+                                    <div class="bg-golden-yellow separator-line-thick no-margin-lr margin-five no-margin-bottom xs-display-none"></div>
                                 </div>
                             </div>
                         </article>
@@ -246,7 +246,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Categories</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body">
                                 <ul class="category-list">
                                     <li><a href="#">Web Design</a></li>
@@ -262,7 +262,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">About Me</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body">
                                 <img src="http://placehold.it/600x255" alt=""/>
                                 <span class="alt-font text-uppercase dark-gray-text font-weight-600 margin-twenty-two display-block no-margin-lr no-margin-bottom  xs-margin-five xs-no-margin-lr">John Deo</span>
@@ -273,7 +273,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Text Widget</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body">
                                 <p>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the of type and scrambled it to make a type specimen.</p>
                             </div>
@@ -282,7 +282,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Popular Posts</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body">
                                 <ul class="widget-posts">
                                     <li><a href="blog-details.html">Standard Post with Gallery</a>Saturday - June 15, 2013 </li>
@@ -296,7 +296,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Tags</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body tags">
                                 <a href="#">Advertisement</a><a href="#">Fashion</a><a href="#">Sea</a><a href="#">Forest</a><a href="#">Nature</a><a href="#">Portrait</a><a href="#">Wordpress</a><a href="#">Photo</a><a href="#">Sky</a>
                             </div>
@@ -305,7 +305,7 @@
                         <!-- widget  -->
                         <div class="widget">
                             <span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">Recent Comments</span>
-                            <div class="bg-fast-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
+                            <div class="bg-golden-yellow separator-line-thick no-margin-lr md-margin-eleven md-no-margin-lr"></div>
                             <div class="widget-body">
                                 <ul class=" widget-posts">
                                     <li><a href="blog-details.html" class="display-block alt-font">Standard Post with Gallery</a>Saturday - June 15, 2013 at 12:04 pm</li>
