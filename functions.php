@@ -60,19 +60,19 @@ remove_filter( 'rest_pre_serve_request', '_oembed_rest_pre_serve_request', 10, 4
 remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
 remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 
+//remove wp embed
 function my_deregister_scripts(){
- wp_deregister_script( 'wp-embed' );;
+	wp_deregister_script( 'wp-embed' );;
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
+//remove jquerz migrate
 add_filter( 'wp_default_scripts', 'remove_jquery_migrate' );
-function remove_jquery_migrate($scripts)
-{
-  if(!is_admin())
-  {
-	  $scripts->remove( 'jquery');
-	  $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
-  }
+function remove_jquery_migrate($scripts) {
+	if(!is_admin()){
+			$scripts->remove( 'jquery');
+			$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+		}
 }
 
 
@@ -80,7 +80,6 @@ function remove_jquery_migrate($scripts)
 
 if(!function_exists("triomics_setup")){
 	function triomics_setup() {
-
 		add_theme_support( 'title-tag' );
 
 		add_theme_support( 'custom-logo', array(
@@ -102,33 +101,28 @@ if(!function_exists("triomics_setup")){
 			'gallery',
 			'caption',
 		) );
-
 		add_theme_support( 'customize-selective-refresh-widgets' );
 	}
-
 }
-
-
-
 
 // If Dynamic Sidebar Exists
 
 function as_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'twentysixteen' ),
+		'name'          => __( 'Sidebar', 'triomics' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentysixteen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'triomics' ),
+		'before_widget' => '<div class="col-md-3 col-md-offset-1 col-sm-4">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">',
+		'after_title'   => '</span>',
 	) );
 
 }
 add_action( 'widgets_init', 'as_widgets_init' );
 
 
-// Add custom post type
+// Add custom post create_project_type
 
 // Create post type Project
 function create_project_type() {
@@ -207,7 +201,7 @@ add_action( 'init', 'create_slider_type');
 		
 // }
 
-
+//Функция для определения мобильного
 function is_mobile(){
 	$useragent = $_SERVER['HTTP_USER_AGENT'];
 	if(
