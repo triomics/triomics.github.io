@@ -88,7 +88,10 @@ if(!function_exists("triomics_setup")){
 			'flex-height' => true,
 		) );
 
-		set_post_thumbnail_size( 1200, 9999 );
+		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 1920, 9999 );
+
+		add_image_size('blog-thumb', 318, 206, true );
 
 		// This theme uses wp_nav_menu() in two locations.
 		
