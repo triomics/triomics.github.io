@@ -1,16 +1,29 @@
 <?php 
+
+//get variables
+
+$slider = get_field ('slider', option);
+$about = get_field ('about', option);
+$services = get_field ('services', option);
+$latest_w = get_field ('latest_w', option);
+$work_with_us = get_field ('work_with_us', option);
+$offers = get_field ('offers', option);
+$blog = get_field ('blog', option);
+
+
 //header
+
 get_header(); 
 
-    if ($slider === true) { 
+    if ($slider == true) { 
         get_template_part('layouts/slider');
     }
 
-    if ($about === true) {
+    if ($about == true) {
         get_template_part('layouts/about-us');
     }
 
-    if ($services === true) {
+    if ($services == true) {
         get_template_part('layouts/services');
     }
 
@@ -51,19 +64,19 @@ get_header();
 
 
 <?php
-    if ($latest_w === true) {
+    if ($latest_w == true) {
         get_template_part('layouts/latest-work');
     }
 
-    if ($work_with_us === true) {
+    if ($work_with_us == true) {
         get_template_part('layouts/want-to-work');
     }
 
-    if ($offers === true) {
+    if ($offers == true) {
         get_template_part('layouts/offers');
     }   
 
-    if ($blog === true) {
+    if ($blog == true) {
         get_template_part('layouts/latest-blog');
     }   
 

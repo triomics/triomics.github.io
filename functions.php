@@ -186,20 +186,17 @@ function create_slider_type() {
 
 add_action( 'init', 'create_slider_type');
 
-
-//Включимо сторінку налаштувань сайту
-
-// if( function_exists('acf_add_options_page') ) {
+if( function_exists('acf_add_options_page') ) {
 	
-	// acf_add_options_page(array(
-		// 'page_title' 	=> 'Настройки сайту',
-		// 'menu_title'	=> 'Настройки сайту',
-		// 'menu_slug' 	=> 'theme-general-settings',
-		// 'capability'	=> 'edit_posts',
-		// 'redirect'		=> false
-	// ));
+	acf_add_options_page(array(
+		'page_title' 	=> 'Настройки сайту',
+		'menu_title'	=> 'Настройки сайту',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
 		
-// }
+}
 
 //Функция для определения мобильного
 function is_mobile(){
