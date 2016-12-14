@@ -23,6 +23,7 @@
                 $counter = 0;
                 
                 $the_querys = new WP_Query($args);
+                
                 while ($the_querys -> have_posts()) : $the_querys -> the_post(); 
                 $counter++;
 

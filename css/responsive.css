@@ -16,8 +16,6 @@
     /* blog */
     .blog-post-style3 article .post-details {padding: 10px;}
 
-    /* restaurant */
-    .menu-item { padding: 22px 0;}
 
     /* spa */
     .hover-box-text .title-medium::before {left: 35px;width: 15px;}
@@ -276,7 +274,6 @@
     .md-fix-background-right {position: relative; background-size: cover !important; overflow: hidden; background-position: right center; background-repeat: no-repeat !important; background-attachment: fixed !important}
     .chef-details { left: 8%; width: 90%;}
     .menu-text-sub span {line-height: 15px;}
-    .menu-item { padding: 16px 0;}
 
     /* travel */
     .adventure-details-destinations{ right: 1px;}
@@ -329,7 +326,6 @@
     .architecture-bio:hover .architecture-details { bottom: 10px !important;}
 
     /* restaurant */
-    .menu-item:first-child { padding: 16px 0;}
     .chef-bio:hover .chef-details { bottom: 20px;}
     .slider-typography .slider-typography-option5 span {width: 65%;}
     
@@ -1129,9 +1125,6 @@
     section { padding: 60px 0;}
     .restaurant-dishes { height: 410px; margin-top: 0px; width: 300px;}
     .menu-img { display: none !important;}
-    .menu-text { width: 100% !important;}
-    .menu-item { padding: 24px 0;}
-    .menu-item p { margin: 0;}
     .restaurant-menu-text-inner { padding: 8% !important; }    
     .restaurant-menu-background {left: 10%; width: calc(100% - 20%);height: calc(100% - 50%); top: 26%;}
     .restaurant-menu-text {width: calc(100% - 50px); left: 25px;}

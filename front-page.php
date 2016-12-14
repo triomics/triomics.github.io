@@ -30,7 +30,7 @@ get_header();
 ?>
     
     <!-- counter section -->
-    <section class=" border-bottom border-transperent-white-light wow fadeIn">
+    <section class="border-bottom border-transperent-white-light wow fadeIn">
         <div class="container">
             <div class="row">
                 <!-- counter item -->

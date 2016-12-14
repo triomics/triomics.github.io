@@ -48,7 +48,7 @@
         <![endif]-->
 		<?php wp_head(); ?>
     </head>
-	<body class="js-preloader" <?php if (is_front_page()) { ?>style="background:url('images/travel-img1.jpg') top #1e2126 no-repeat;"<?php } ?>>
+	<body class="js-preloader <?php if (is_front_page()) { ?> front-page <?php } else { ?> inner-page <?php } ?>" <?php if (is_front_page()) { ?>style="background:url('images/travel-img1.jpg') top #1e2126 no-repeat;"<?php } ?>>
 		<div class="bg-color"></div>
 		<div class="preloader">
 		  <div class="rel-pos">
@@ -69,17 +69,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand inner-link" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/images/triomics-logo4.svg" alt=""/></a>
+                        <a class="navbar-brand inner-link" href="<?php bloginfo('url'); ?>#home"><img src="<?php echo get_template_directory_uri(); ?>/images/triomics-logo4.svg" alt=""/></a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#about" class="inner-link">About</a></li>
-                            <li><a href="#services" class="inner-link">Services</a></li>
-                            <li><a href="#work" class="inner-link">Works</a></li>
-                            <li><a href="#special-offer" class="inner-link">Offers</a></li>
-                            <li><a href="#blog" class="inner-link">Blog</a></li>
-                            <li><a href="#contact" class="inner-link">Contact</a></li>
-                        </ul>
+                    <?php
+						if( has_nav_menu( "header-menu" )) {                                                               
+                            wp_nav_menu( 
+                                array( 
+                                    'container' => false,
+                                    'menu_class' => 'nav navbar-nav',
+                                    'menu' => 'header-menu'
+                                ) 
+                            );    
+						}										
+					?>
                     </div>
                     <div class="col-lg-3 col-md-2 pull-right header-right text-right sm-display-none">
                         <span class="text-uppercase white-text text-small md-display-none">Need Services? &nbsp;&nbsp;</span>

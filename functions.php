@@ -82,6 +82,14 @@ if(!function_exists("triomics_setup")){
 	function triomics_setup() {
 		add_theme_support( 'title-tag' );
 
+		register_nav_menus(array(
+			'header-menu' => __('Меню шапки', 'triomics'),
+			// 'footer-menu' => __('Меню подвала', 'automotive'),
+			// 'top-menu' => __('Верхнее меню', 'automotive'),
+			// 'mobile-menu' => __('Мобильное приложение', 'automotive'),
+			// 'service-menu' => __('Сервисное меню', 'automotive')
+		));
+
 		add_theme_support( 'custom-logo', array(
 			'height'      => 240,
 			'width'       => 240,
@@ -92,6 +100,7 @@ if(!function_exists("triomics_setup")){
 		set_post_thumbnail_size( 1920, 9999 );
 
 		add_image_size('blog-thumb', 318, 206, true );
+		add_image_size('blog-thumb-big', 1920, 1080, true );
 
 		// This theme uses wp_nav_menu() in two locations.
 		
