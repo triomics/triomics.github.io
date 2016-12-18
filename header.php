@@ -48,7 +48,7 @@
         <![endif]-->
 		<?php wp_head(); ?>
     </head>
-	<body class="js-preloader <?php if (is_front_page()) { ?> front-page <?php } else { ?> inner-page <?php } ?>" <?php if (is_front_page()) { ?>style="background:url('images/travel-img1.jpg') top #1e2126 no-repeat;"<?php } ?>>
+	<body class="js-preloader <?php if (is_front_page()) { ?> front-page <?php } else { ?> inner-page <?php } ?>" <?php if (is_front_page()) { ?>style="background:url('images/image1.jpg') top #1e2126 no-repeat;"<?php } ?>>
 		<div class="bg-color"></div>
 		<div class="preloader">
 		  <div class="rel-pos">
