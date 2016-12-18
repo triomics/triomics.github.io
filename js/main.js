@@ -11,6 +11,14 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
+	
+	//preloader
+	setTimeout( function() {
+		setTimeout( function () {$('body').removeClass('js-preloader'); 
+		}, 400);	
+		$('.bg-color, .preloader').fadeOut(400);
+    }, 1400); 
+	
     //Disable mouse scroll wheel zoom on embedded Google Maps
     $('.maps').click(function () {
         $('.maps iframe').css("pointer-events", "auto");

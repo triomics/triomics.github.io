@@ -1,77 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <!-- title -->
-        <title>Brando Responsive & Multipurpose OnePage Template - Blog</title>
-        <!-- description -->
-        <meta name="description" content="A great collection of creative, responsive, elegant onepage templates for different industries.">
-        <!-- keywords -->
-        <meta name="keywords" content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
-        <meta charset="utf-8">
-        <meta name="author" content="ThemeZaa">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-        <!-- animation -->
-        <link rel="stylesheet" href="css/animate.css" />
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- et line icon --> 
-        <link rel="stylesheet" href="css/et-line-icons.css" />
-        <!-- font-awesome icon -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <!-- owl carousel -->
-        <link rel="stylesheet" href="css/owl.transitions.css" />
-        <link rel="stylesheet" href="css/owl.carousel.css" />
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-        <!-- style -->
-        <link rel="stylesheet" href="css/app.css" />
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css" />
-        <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <!-- navigation -->
-        <nav class="navbar no-margin-bottom alt-font">
-            <div class="container">
-                <div class="row">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="col-lg-2 col-md-3 navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand inner-link" href="agency.html#home"><img src="images/triomics-logo4.svg" alt=""/></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <ul class="nav navbar-nav">
-                            <li><a href="../#about" class="inner-link">About</a></li>
-                            <li><a href="../#services" class="inner-link">Services</a></li>
-                            <li><a href="../#work" class="inner-link">Works</a></li>
-                            <li><a href="../#special-offer" class="inner-link">Offers</a></li>
-                            <li><a href="../#blog" class="inner-link">Blog</a></li>
-                            <li><a href="../#contact" class="inner-link">Contact</a></li>
-                        </ul>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-2 pull-right header-right text-right sm-display-none">
-                        <span class="text-uppercase white-text text-small md-display-none">Let's work together?&nbsp;&nbsp;</span>
-                        <a class="btn-small-white btn btn-very-small no-margin inner-link" href="agency.html#contact">Start Now</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- end navigation -->
-        <!-- page title -->
+<?php get_header(); ?>
+    <!-- page title -->
         <section class="page-title parallax2 parallax-fix wow fadeIn">
             <img class="parallax-background-img" src="http://placehold.it/1920x1080" alt="" />
             <div class="opacity-full-dark bg-deep-blue3"></div>
@@ -403,83 +331,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 pagination text-center no-padding">
-                        <a href="#"><i class="fa fa-angle-left title-medium font-weight-600 deep-orange-text no-border"></i></a>
+                        <a href="#"><i class="fa fa-angle-left title-medium font-weight-600 fast-yellow-text no-border"></i></a>
                         <a href="#" class="alt-font">1</a>
                         <a href="#" class="alt-font active">2</a>
                         <a href="#" class="alt-font">3</a>
                         <a href="#" class="alt-font">4</a>
                         <a href="#" class="alt-font">5</a>
-                        <a href="#"><i class="fa fa-angle-right title-medium font-weight-600 deep-orange-text"></i></a>
+                        <a href="#"><i class="fa fa-angle-right title-medium font-weight-600 fast-yellow-text"></i></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end pagination -->
-        <!-- footer -->
-        <footer class="no-padding-top wow fadeIn">
-            <div class="container">
-                <div class="row border-bottom padding-eight no-padding-lr">
-                    <div class="col-md-12 col-sm-12 text-center">
-                        <div class="footer-social position-relative top4">
-                            <!-- social media link -->
-                            <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                            <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
-                            <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                            <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                            <!-- end social media link -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 text-center">
-                            <span class="text-small text-uppercase letter-spacing-1 alt-font">&copy; 2015 Brando is proudly powered by <a href="http://www.themezaa.com/" target="_blank">ThemeZaa.</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-        <!-- scroll to top -->
-        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-        <!-- end scroll to top -->
-        <!-- javascript libraries -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/modernizr.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
-        <script type="text/javascript" src="js/smooth-scroll.js"></script>
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <!-- menu navigation -->
-        <script type="text/javascript" src="js/jquery.nav.js"></script>
-        <!-- animation -->
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <!-- page scroll -->
-        <script type="text/javascript" src="js/page-scroll.js"></script>
-        <!-- owl carousel -->
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <!-- counter -->
-        <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <!-- parallax -->
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <!-- magnific popup -->
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <!-- portfolio with shorting tab -->
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <!-- images loaded -->
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- pull menu -->
-        <script type="text/javascript" src="js/classie.js"></script>
-        <!-- counter  -->
-        <script type="text/javascript" src="js/counter.js"></script>
-        <!-- fit video  -->
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <!-- setting -->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-</html>
+<?php get_footer(); ?>
