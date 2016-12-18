@@ -770,7 +770,7 @@ nav .container { display: table-cell; height: 75px; position: relative; vertical
 .navbar-header {background: url("../images/logo-border.png") right no-repeat}
 nav.shrink .container {height: 60px;}
 .header-right { margin: 13px 0 0; }
-.navbar-nav a { font-size: 12px; text-transform: uppercase; color: #fff !important; padding:0 !important; font-weight: 500}
+.navbar-nav a { font-size: 12px; text-transform: uppercase; color: #fff !important; padding:0 !important; font-weight: 500; letter-spacing: 1px;}
 .navbar-nav a:hover { color: #cacaca !important; background: transparent !important}
 .navbar-nav a:focus {color: #fff !important; background: transparent !important}
 .nav li {margin: 15px 20px}
