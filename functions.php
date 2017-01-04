@@ -106,7 +106,6 @@ if(!function_exists("triomics_setup")){
 		// This theme uses wp_nav_menu() in two locations.
 		
 		register_nav_menu( 'primary', 'Главное Меню' );
-
 		add_theme_support( 'html5', array(
 			'search-form',
 			'comment-form',

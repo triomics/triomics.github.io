@@ -1,6 +1,7 @@
 <!-- special offer section -->
 <section id="special-offer" class="wow fadeIn fix-background fix-background-webkit" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/arc_full.png');">
     <div class="opacity-full bg-dark-blue"></div>
+    
     <div class="container position-relative">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
