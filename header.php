@@ -47,7 +47,6 @@
             <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
         <![endif]-->
 		<?php wp_head(); ?>
-        
     </head>
 	<body class="js-preloader <?php if (is_front_page()) { ?> front-page <?php } else { ?> inner-page <?php } ?>" <?php if (is_front_page()) { ?>style="background:url('<?php echo get_template_directory_uri(); ?>/images/image1.png') top #1e2126 no-repeat;"<?php } ?>>
 		<div class="bg-color"></div>
