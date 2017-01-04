@@ -1,5 +1,5 @@
 <!-- special offer section -->
-<section id="special-offer" class="wow fadeIn fix-background fix-background-webkit" style="background-image:url('http://placehold.it/1920x1100');">
+<section id="special-offer" class="wow fadeIn fix-background fix-background-webkit" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/arc_full.png');">
     <div class="opacity-full bg-dark-blue"></div>
     <div class="container position-relative">
         <div class="row">

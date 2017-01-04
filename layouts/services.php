@@ -11,7 +11,7 @@
         <!-- end section title -->
         <div class="row" style="margin-top: 8%;">
             <div class="col-lg-6 col-md-12 col-sm-12 parallax2 parallax-fix service xs-display-none">
-                <img class="parallax-background-img" src="http://placehold.it/1920x950" alt="" />
+                <img class="parallax-background-img" src="<?php echo get_template_directory_uri(); ?>/images/work-bg.png" alt="" />
             </div>
             <!-- features box main-->
             <div class="col-lg-6 col-md-12 col-sm-12 service padding-seven md-padding-seventeen xs-padding-twenty-nine xs-no-padding-lr">

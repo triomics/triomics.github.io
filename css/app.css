@@ -555,8 +555,9 @@ i { color: #9a9a9a; margin:0}
 .z-index-0 {z-index:0 !important;}
 .z-index-minus2 {z-index:-2 !important;}
 .no-transition *, .owl-carousel *, .mfp-container * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-section { padding: 130px 0; }
+.front-page section { padding: 100px 0; }
 .button-bg-area{padding: 80px 0;}
+.front-page #home {padding-bottom: 0px;}
 
 /* ===================================
     Border
@@ -770,7 +771,7 @@ nav .container { display: table-cell; height: 75px; position: relative; vertical
 .navbar-header {background: url("../images/logo-border.png") right no-repeat}
 nav.shrink .container {height: 60px;}
 .header-right { margin: 13px 0 0; }
-.navbar-nav a { font-size: 12px; text-transform: uppercase; color: #fff !important; padding:0 !important; font-weight: 500}
+.navbar-nav a { font-size: 12px; text-transform: uppercase; color: #fff !important; padding:0 !important; font-weight: 500; letter-spacing: 1px;}
 .navbar-nav a:hover { color: #cacaca !important; background: transparent !important}
 .navbar-nav a:focus {color: #fff !important; background: transparent !important}
 .nav li {margin: 15px 20px}
@@ -1452,35 +1453,6 @@ footer img {max-width: 156px;}
 .work-with-us {padding: 80px 0}
 
 /* ===================================
-    Restaurant demo
-====================================== */
-
-.restaurant-dishes { width:450px; height: 550px; margin-top: 45px;  }
-#menu .container-fluid { left: -7px; position: relative; }
-.restaurant-menu {min-height: 740px}
-.restaurant-menu:hover .restaurant-menu-image img {opacity: .5}
-.restaurant-menu-image { position: absolute;  height: 100%; width: 100%; }
-.restaurant-menu-text {border:8px solid #d8b75f; position: absolute; transition: all 400ms ease-out 0s; opacity: 0; z-index: 2;  height: calc(100% - 80px); width: calc(100% - 100px); left: 57px; top: -42px;}
-.restaurant-menu:hover .restaurant-menu-text {opacity: 1; top: 42px }
-.restaurant-menu-text-inner { height: 100%; overflow-y: auto; }
-.menu-item { border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 17px 0 22px 0; float: left; width: 100% }
-.menu-item:first-child {padding-top:0 }
-.menu-item:last-child {padding-bottom:0; border-bottom: none }
-.menu-item img {max-height: 80px}
-.menu-text, .menu-img {min-height: 80px; position: relative}
-.menu-text-sub { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; position: absolute; top: 50%;}
-.menu-item p {line-height: 20px; margin: 0 0 5px 0}
-.restaurant-menu-background { height: calc(100% - 46%); width: calc(100% - 46%); left: 23%; top: 23%;  position: absolute; background: rgba(255,255,255,1);}
-.restaurant-menu-border {  border: 6px solid rgba(0,0,0,.1); height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
-.restaurant-menu-item { position: absolute; width: 100%; padding: 0 15px; top: 50%; text-align: center; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; z-index:1 }
-.chef-bio:hover .chef-details {opacity: 1; bottom: 50px}
-.chef-details {position: absolute; opacity: 0; bottom: -250px; transition: all 400ms ease-out 0s; width: 70%; left: 15%; }
-.chef-bio:hover .chef-img img { position: relative; bottom: 20px; opacity: .5; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);  transform: scale(1.1,1.1); -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);}
-.chef-img img {transition: all 400ms ease-out 0s; position: relative; bottom: 0}
-.special-dishes-price{height: 90px; line-height: 18px; padding: 25px 0; width: 90px; right: 15px; top: 0}
-.special-dishes:hover img { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);  transform: scale(1.1,1.1); }
-
-/* ===================================
     Travel demo
 ====================================== */
 
@@ -1639,7 +1611,7 @@ footer img {max-width: 156px;}
 .blog-search-btn{color: #949494; border: none; border-bottom: 1px solid #e5e5e5; padding-left: 0}
 .blog-search-btn:focus{border: none; border-bottom: 1px solid #000;}
 .widget{margin-bottom: 65px;}
-.widget .close-search{ cursor: pointer; position: absolute; right: 19px; top: 12px; z-index: 998;}
+.widget .close-search{ cursor: pointer; position: absolute; right: 19px; top: 12px;}
 .widget .close-search:hover {color: #000}
 .pagination{margin:30px 0;}
 .pagination a{font-weight:bold; display: inline-block; vertical-align: middle; color: #aaaaaa}
@@ -1675,10 +1647,9 @@ footer img {max-width: 156px;}
 .tags a:hover{background-color: #000; color: #fff !important;} 
 
 /* breadcrumb */
-.breadcrumb {padding: 10px 0 7px; border-bottom: 1px solid #e5e5e5; background-color: inherit}
-.breadcrumb ul li {text-transform: uppercase; float: left;font-size: 11px;} 
-.breadcrumb ul li::after { color: #898989; content: "|"; font-size: 11px;  padding: 0 12px;  position: relative;  top: -1px;}
-.breadcrumb ul li:last-child:after { display: none;}
+.breadcrumb {padding: 15px 0 14px; border-bottom: 1px solid #e5e5e5; background-color: inherit; text-transform: uppercase;}
+.breadcrumb>span {display:block;text-transform: uppercase; float: left;font-size: 11px;} 
+.breadcrumb>span:last-child:after { display: none;}
 
 /* ===================================
     Coming soon
@@ -1802,4 +1773,45 @@ footer img {max-width: 156px;}
   100% {
     transform: scale(1.05);
   }
+}
+
+.breadcrumb_last {
+    color: #ffb621;
+    opacity: .7;
+}
+
+.breadcrumb {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.inner-page {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.inner-page .breadcrumb+section p,
+.inner-page .breadcrumb+section ol li {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+
+.inner-page .breadcrumb+section h3 {
+    margin: 35px 0 20px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    color: #626262;
+}
+
+.inner-page .breadcrumb+section a {
+    display: inline-block;
+    background: #efefef;
+    padding: 0 5px;
+    font-weight: 700;
+    color: #337ab7;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.post-thumbnail .post-details .text-extra-small {
+    display: none !important;
 }

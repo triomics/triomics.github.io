@@ -16,7 +16,6 @@
  
 add_action( 'after_setup_theme', 'triomics_setup' );
 
-
 remove_action('wp_head', 'wp_generator');
 remove_action( 'wp_head', 'feed_links_extra', 3 ); 
 remove_action( 'wp_head', 'feed_links', 2 );
@@ -82,6 +81,14 @@ if(!function_exists("triomics_setup")){
 	function triomics_setup() {
 		add_theme_support( 'title-tag' );
 
+		register_nav_menus(array(
+			'header-menu' => __('Меню шапки', 'triomics'),
+			// 'footer-menu' => __('Меню подвала', 'automotive'),
+			// 'top-menu' => __('Верхнее меню', 'automotive'),
+			// 'mobile-menu' => __('Мобильное приложение', 'automotive'),
+			// 'service-menu' => __('Сервисное меню', 'automotive')
+		));
+
 		add_theme_support( 'custom-logo', array(
 			'height'      => 240,
 			'width'       => 240,
@@ -91,7 +98,10 @@ if(!function_exists("triomics_setup")){
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1920, 9999 );
 
-		add_image_size('blog-thumb', 318, 206, true );
+		add_image_size('blog-thumb', 800, 520, true );
+		add_image_size('blog-thumb-big', 1920, 1080, true );
+
+		add_image_size('portfolio-thumb', 800, 800, true );
 
 		// This theme uses wp_nav_menu() in two locations.
 		
@@ -147,7 +157,7 @@ function create_project_type() {
 		'show_in_menu' => true,
 		'show_in_nav_menus' => true,
 		'capability_type' => 'post',
-		'supports' => array('title', 'editor'),
+		'supports' => array('title', 'editor', 'thumbnail'),
 		'exclude_from_search' => true,
 		'menu_position' => 16,
 		'menu_icon' => 'dashicons-images-alt'
@@ -156,6 +166,32 @@ function create_project_type() {
   register_post_type('portfolio', $args);
 }
 add_action( 'init', 'create_project_type');
+
+// хук для регистрации
+add_action('init', 'create_taxonomy');
+function create_taxonomy(){
+	// заголовки
+	$labels = array(
+		'name'              => 'Категория Портфолио',
+		'singular_name'     => 'Категория Портфолио',
+		'search_items'      => 'Категория Портфолио',
+		'all_items'         => 'Все категории',
+		'edit_item'         => 'Редактировать Категорию',
+		'update_item'       => 'Обновить Катерию',
+		'add_new_item'      => 'Добавить новую категорию',
+		'new_item_name'     => 'Новое имя категории',
+		'menu_name'         => 'Категория Портфолио',
+	); 
+	// параметры
+	$args = array(
+			'label'                 => '', // определяется параметром $labels->name
+			'labels'                => $labels,
+			'show_ui' => true,
+            'show_tagcloud' => false,
+            'hierarchical' => true
+	);
+	register_taxonomy('portfolio-cat', array('portfolio'), $args );
+}
 
 
 // Post post type Слайдер 
@@ -218,4 +254,15 @@ function is_mobile(){
 	)
 		return true;
 	return false;   
+}
+
+
+function get_term_lists ($postID) {
+	global $post;
+	$terms = get_the_terms( $postID, 'portfolio-cat');
+	if( $terms ){
+		foreach ($terms as $cats) {
+			echo $cats->slug.' ';
+		}	
+	}
 }
