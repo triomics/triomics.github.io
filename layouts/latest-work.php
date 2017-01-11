@@ -71,6 +71,11 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div"><a href="">All Works</a></div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- end work section -->

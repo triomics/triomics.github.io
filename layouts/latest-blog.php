@@ -69,6 +69,11 @@
             </div>
             <!-- end blog slider -->
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div"><a href="blog/">All Blog Posts</a></div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- end blog section -->

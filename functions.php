@@ -125,8 +125,8 @@ function as_widgets_init() {
 		'name'          => __( 'Sidebar', 'triomics' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'triomics' ),
-		'before_widget' => '<div class="col-md-3 col-md-offset-1 col-sm-4">',
-		'after_widget'  => '</div>',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '<span class="alt-font text-uppercase dark-gray-text font-weight-600 text-large">',
 		'after_title'   => '</span>',
 	) );
@@ -222,8 +222,38 @@ function create_slider_type() {
 
   register_post_type('slider', $args);
 }
-
 add_action( 'init', 'create_slider_type');
+
+
+// Post post type Offers
+function create_offers_type() {
+
+  $args = array(
+    'labels' => array(
+      'name' => __('Offers'),
+      'singular_name' => __('Offers'),
+      'all_items' => __('Все Offers'),
+	  'add_new' => __('Новый Offers'),
+      'add_new_item' => __('Новые Offers'),
+      'edit_item' => __('Редактировать Offer'),
+    ),
+
+		'public' => false,
+		'hierarchical' => false,
+		'has_archive' => false,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'show_in_nav_menus' => false,
+		'capability_type' => 'post',
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'exclude_from_search' => true,
+		'menu_position' => 15,
+		'menu_icon' => 'dashicons-admin-page'
+    );
+
+  register_post_type('offers', $args);
+}
+add_action( 'init', 'create_offers_type');
 
 if( function_exists('acf_add_options_page') ) {
 	

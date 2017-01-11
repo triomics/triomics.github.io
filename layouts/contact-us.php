@@ -36,32 +36,7 @@
               </div>
               <!-- end text -->
             <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr">
-                <form id="agencycontactform" action="javascript:void(0)" method="post">
-                    <div id="success" class="no-margin-lr"></div>
-                    <!-- input -->
-                    <input type="text" name="name" id="name" placeholder="* YOUR NAME" class="big-input alt-font">
-                    <!-- end input -->
-                    <!-- input  -->
-                    <input type="text" name="email" id="email" placeholder="* YOUR EMAIL" class="big-input alt-font">
-                    <!-- end input -->
-                    <!-- dropdown  -->
-                    <div class="select-style big-select alt-font">
-                        <select id="interestedin" name="interestedin">
-                            <option selected>WHAT ARE YOU INTERESTED IN?</option>
-                            <option value="Web Development">Web Development</option>
-                            <option value="Mobile Application">Mobile Application</option>
-                            <option value="Graphic Design">Graphic Design</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <!-- end dropdown  -->
-                    <!-- textarea  -->
-                    <textarea name="comment" id="comment" placeholder="YOUR MESSAGE" class="big-input alt-font"></textarea>
-                    <!-- end textarea  -->
-                    <!-- button  -->
-                    <button id="agency-contact-button" type="submit" class="highlight-button-accent-border btn btn-medium">Submit</button>
-                    <!-- end button  -->
-                </form>
+              <?php echo do_shortcode('[contact-form-7 id="5" title="Контактна форма 1"]'); ?>
             </div>
         </div>
     </div>
