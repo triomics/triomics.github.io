@@ -82,6 +82,8 @@ get_header();
     // blog
     get_template_part('layouts/contact-us');
     
+    // blog
+    get_template_part('layouts/popup-images');
     // footer
 get_footer(); 
 

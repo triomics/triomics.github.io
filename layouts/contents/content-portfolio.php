@@ -7,10 +7,21 @@
                 <div class="opacity-full bg-dark-gray"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center z-index-1 margin-twenty-five no-margin-lr no-margin-bottom xs-margin-nineteen xs-no-margin-bottom xs-no-margin-lr">
+                        <div class="col-md-12 text-center z-index-1 margin-thirteen no-margin-lr no-margin-bottom xs-margin-nineteen xs-no-margin-bottom xs-no-margin-lr">
                             <div class="slider-typographi-text">
                                 <span class="alt-font font-weight-600 white-text title-extra-large letter-spacing-2 text-uppercase display-block xs-title-medium"><?php the_title(); ?></span>
                                 <div class="bg-deep-orange separator-line-thick-long margin-seven margin-lr-auto xs-margin-eleven xs-margin-lr-auto"></div>
+                                <?php 
+                                $field = get_field_object('portfolio_features');
+                                $colors = $field['value'];
+                                    if( $colors ): 
+                                ?>
+                                <ul class="features-icon">
+                                    <?php foreach( $colors as $color ): ?>
+                                        <li><?php echo $field['choices'][ $color ]; ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -33,7 +44,6 @@
         <?php $images_top = get_field('portfolio_gallery');
 		if( $images_top ): ?>
             <section>
-                <div class="container">
                     <div>
                         <!-- popup thumb images -->
                         <div class="row">
@@ -43,7 +53,6 @@
                         </div>
                         <!-- end popup thumb images -->
                     </div>
-                </div>
         </section>
         <?php endif; ?>
         <section class="no-padding-top">

@@ -58,6 +58,7 @@
 
             </div>
         </div>
+		<?php get_template_part('layouts/start-project');?>
     </section>
 
     <?php get_footer(); ?>

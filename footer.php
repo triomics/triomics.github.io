@@ -57,8 +57,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.parallax-1.1.3.js"></script>
 <!-- magnific popup -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
-<!-- portfolio with shorting tab -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
 <!-- images loaded -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imagesloaded.pkgd.min.js"></script>
 <!-- pull menu -->
@@ -67,7 +65,21 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/counter.js"></script>
 <!-- fit video  -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.fitvids.js"></script>
+<!-- portfolio with shorting tab -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
 <!-- setting -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-92855829-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<?php wp_footer(); ?>
+
 </body>
 </html>

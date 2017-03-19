@@ -11,14 +11,14 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-	
-	//preloader
-	setTimeout( function() {
-		setTimeout( function () {$('body').removeClass('js-preloader'); 
-		}, 400);	
-		$('.bg-color, .preloader').fadeOut(400);
+    
+    //preloader
+    setTimeout( function() {
+        setTimeout( function () {$('body').removeClass('js-preloader'); 
+        }, 400);    
+        $('.bg-color, .preloader').fadeOut(400);
     }, 1400); 
-	
+    
     //Disable mouse scroll wheel zoom on embedded Google Maps
     $('.maps').click(function () {
         $('.maps iframe').css("pointer-events", "auto");
@@ -206,10 +206,14 @@ $(document).ready(function () {
 
     $portfolio_filter = $('.grid');
     $portfolio_filter.imagesLoaded(function () {
-        $portfolio_filter.isotope({
-            itemSelector: 'li',
-            layoutMode: 'masonry'
-        });
+        
+        setTimeout( function() {
+            $portfolio_filter.isotope({
+                itemSelector: '.masonri-li',
+                layoutMode: 'masonry'
+            });
+        }, 1000); 
+
     });
 
     $grid_selectors = $('.portfolio-filter > li > a');
@@ -1026,4 +1030,16 @@ $(function () {
                 $(this).toggleClass('open');
                 $('b', this).toggleClass("caret caret-up");
             });
+});
+
+jQuery(document).ready(function($) {
+    
+    $('img').bind("contextmenu",function(e) {
+        $('#popup-window-for-images').fadeIn(400);
+       return false;
+    });
+
+    $('#popup-window-for-images .mfp-close').click( function() {
+        $('#popup-window-for-images').fadeOut(400);
+    })
 });

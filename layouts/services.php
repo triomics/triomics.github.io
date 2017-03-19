@@ -17,30 +17,38 @@
             <div class="col-lg-6 col-md-12 col-sm-12 service padding-seven md-padding-seventeen xs-padding-twenty-nine xs-no-padding-lr">
                 <!-- features box -->
                 <div class="col-md-6 col-sm-12 service-sub text-center">
-                    <i class="icon-genius icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
-                    <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Web Marketing</span>
-                    <p class="text-medium width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
+                    <a href="/online-marketing/">
+                        <i class="icon-genius icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
+                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Web Marketing</span>
+                        <span class="text-medium width-80 center-col">Сomprehensive promotion of your products (social media, content marketing, paid ads, SEO and our experience)</span>
+                    </a>
                 </div>
                 <!-- features box end-->
                 <!-- features box -->
                 <div class="col-md-6 col-sm-12 service-sub text-center">
-                    <i class="icon-desktop icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
-                    <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Web Development</span>
-                    <p class="text-medium width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
+                    <a href="/web-development/">
+                        <i class="icon-desktop icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
+                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Web Development</span>
+                        <span class="text-medium width-80 center-col">Responsive Websites, E-Commerce, SAAS and Mobile Development using the latest technologies available.</span>
+                    </a>
                 </div>
                 <!-- features box end-->
                 <!-- features box -->
                 <div class="col-md-6 col-sm-12 service-sub text-center">
-                    <i class="icon-search icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
-                    <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">SEO</span>
-                    <p class="text-medium width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
+                    <a href="/search-seo/">
+                        <i class="icon-search icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
+                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">SEO</span>
+                        <span class="text-medium width-80 center-col">Optimization and promotion of sites. Our ideas, experience and practice will help your site to reach high positions.</span>
+                    </a>
                 </div>
                 <!-- features box end-->
                 <!-- features box -->
                 <div class="col-md-6 col-sm-12 service-sub text-center">
-                    <i class="icon-tools  icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
-                    <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Design</span>
-                    <p class="text-medium width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.</p>
+                    <a href="/webdesign-ui-ux/">
+                        <i class="icon-tools  icon-extra-large deep-orange-text margin-seven no-margin-lr no-margin-top"></i>
+                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase white-text margin-one no-margin-lr no-margin-top display-block alt-font">Design</span>
+                        <span class="text-medium width-80 center-col">Logos, Visual Identities, Website and App Designs that are not only beautiful, but also meaningful and rooted in research.</span>
+                    </a>
                 </div>
                 <!-- features box end-->
             </div>

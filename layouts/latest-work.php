@@ -42,7 +42,7 @@
                     
                     ?>
                         <!-- portfolio item -->
-                        <li class="<?php get_term_lists ($_post->ID); ?>">
+                        <li class="<?php get_term_lists ($_post->ID); ?> masonri-li">
                             <figure>
                                 <?php 
 
@@ -73,7 +73,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="div"><a href="">All Works</a></div>
+                <div class="div padding-seven text-center"><a class="highlight-button-white-border btn btn-medium" href="/portfolio/">All Works</a></div>
             </div>
         </div>
     </div>
